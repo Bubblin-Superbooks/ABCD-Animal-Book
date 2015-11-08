@@ -1,0 +1,50 @@
+@import url(//fonts.googleapis.com/css?family=EB+Garamond|Chewy);
+
+
+body {
+  margin: 0 0;
+  overflow: hidden;
+  font: 6vw/1.2 'EB Garamond', serif;
+  font-family: 'Chewy', serif;
+  background: white;
+}
+
+.leaf {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+}
+
+.inner {
+  margin: 10% auto;
+  width: 100%; 
+}
+
+.flex {
+  display: -webkit-box;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+h1 {
+  font-size: 70vw; 
+  width:100%; 
+  padding:0; 
+  margin:0;
+}
+
+h2{
+  font-size: 35vw; 
+  width:100%; 
+  padding:0; 
+  margin:0;
+
+}
+.center {  
+  text-align:center;
+}
