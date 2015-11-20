@@ -1,51 +1,298 @@
-.letter{
-  position: absolute;
-    left: 50%;
-    top: 50%;
-    color: #F00;
-    font-weight: 900;
-    font-size: 500px;
-    font-family: cursive;
-    transform: translate3D(-50%, -50%, 0);
+body {
+  background: linear-gradient(90deg, #1A2980 10%, #26D0CE 90%);
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.toy-train {
+  position: relative;
+  width: 22vw;
+}
 
-.letter:hover {
-    animation: wiggle 1s cubic-bezier(0.48, 0.24, 0.51, 1.21) 1;
-    
-    }
+.engine {
+  float: right;
+  position: relative;
+}
 
-@keyframes wiggle{
-  0% {
-    transform: translate3D(-50%, -50%, 0) skewX(0deg) rotateX(0deg)
-  }
+.window {
+  height: 5.6vw;
+  width: 6vw;
+  background-color: #194488;
+  position: relative;
+  border: .6vw solid #000;
+}
 
-  10% {
-    transform: translate3D(-65%, -46%, 0) skewX(15deg) rotateX(30deg)
-  }
+.window:before,
+.window:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  border: .6vw solid #000;
+}
 
-  20% {
-    transform: translate3D(-35%, -54%, 0) skewX(-15deg) rotateX(-30deg)
-  }
+.window:before {
+  height: 1.4vw;
+  background-color: #F82510;
+  width: 9vw;
+  margin-top: -2.6vw;
+  margin-left: -5.2vw;
+  border-radius: 1.6vw;
+}
 
-  35% {
-    transform: translate3D(-59%, -47%, 0) skewX(9deg) rotateX(20deg)
-  }
+.window:after {
+  margin-left: -1.6vw;
+  margin-top: .6vw;
+  border-radius: 50%;
+  height: 2.2vw;
+  width: 2.2vw;
+  background-color: #fff;
+}
 
-  50% {
-    transform: translate3D(-41%, -53%, 0) skewX(-9deg) rotateX(-20deg)
-  }
+.engine-main {
+  height: 2vw;
+  width: 7vw;
+  border: .6vw solid #000;
+  background-color: #3D9A01;
+  position: absolute;
+  border-radius: 0 1.6vw 1.6vw 0;
+  right: -8.2vw;
+  bottom: -.6vw;
+}
 
-  70% {
-    transform: translate3D(-53%, -49%, 0) skewX(3deg) rotateX(15deg)
-  }
+.engine-main:before {
+  content: "";
+  height: 2vw;
+  width: 1.6vw;
+  background-color: #000;
+  position: absolute;
+  top: -2.2vw;
+  left: .8vw;
+  transform: rotate(180deg);
+  border-radius: 50% 50% 50% 50% / 90% 90% 40% 40%;
+}
 
-  90% {
-    transform: translate3D(-47%, -51%, 0) skewX(-3deg) rotateX(-15deg)
-  }
+.engine-main:after {
+  content: "";
+  height: 2.4vw;
+  width: 1.6vw;
+  position: absolute;
+  display: block;
+  right: 1vw;
+  top: -3.6vw;
+  border-radius: 50% 50% 50% 50% / 90% 90% 40% 40%;
+  transform: rotate(180deg);
+  z-index: -1;
+  background-color: #194488;
+  border: .6vw solid #000;
+}
 
+.engine-body {
+  height: 3.4vw;
+  width: 15vw;
+  position: absolute;
+  left: -.4vw;
+  top: 6vw;
+  background-color: #F69F00;
+  border: .6vw solid #000;
+  border-radius: 1vw;
+}
+
+.engine-body .big-wheel {
+  top: .6vw;
+  left: .4vw;
+}
+
+.engine-body .normal-wheel {
+  left: 9vw;
+  top: 1vw;
+}
+
+.engine-body:before {
+  content: "";
+  position: absolute;
+  height: 1vw;
+  width: 1vw;
+  left: -2.2vw;
+  bottom: .4vw;
+  z-index: -1;
+  background-color: #fff;
+  border-radius: 50%;
+  border: .6vw solid #000;
+}
+
+.wheels > div {
+  position: absolute;
+  background-color: #F82510;
+  border-radius: 50%;
+  border: .6vw solid #000;
+  animation: wheel-rotate 1s linear infinite;
+}
+
+.wheels > div:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: .2vw solid #000;
+  top: 50%;
+  margin-top: -.2vw;
+}
+
+.wheels > div:after {
+  content: "";
+  height: 1.6vw;
+  width: 1.6vw;
+  position: absolute;
+  background-color: #000;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  margin-left: -.8vw;
+  margin-top: -.8vw;
+}
+
+.wheels .big-wheel {
+  width: 4.4vw;
+  height: 4.4vw;
+  animation-delay: -0.3s;
+}
+
+.wheels .normal-wheel {
+  height: 4vw;
+  width: 4vw;
+  animation-delay: -0.6s;
+}
+
+.locomotive {
+  height: 7vw;
+  width: 12vw;
+  border: .6vw solid #000;
+  background-color: #F69F00;
+  border-radius: 1vw;
+  position: relative;
+  float: left;
+  margin-top: 2.6vw;
+}
+
+.locomotive:before {
+  content: "";
+  width: 100%;
+  background: linear-gradient(to right, #000000 0%, #000000 8%, #f69f00 8%, #f69f00 15%, #000000 15%, #000000 28%, #000000 34%, #f69f00 34%, #f69f00 65%, #000000 65%, #000000 65%, #000000 100%);
+  height: .6vw;
+  position: absolute;
+  top: 1.2vw;
+  left: 0;
+}
+
+.locomotive:after {
+  content: "";
+  width: 100%;
+  background: linear-gradient(to right, #000000 0%, #000000 24%, #f69f00 24%, #f69f00 65%, #f69f00 65%, #000000 65%, #000000 85%, #f69f00 85%, #f69f00 90%, #000000 90%, #000000 100%);
+  height: .6vw;
+  position: absolute;
+  top: 2.8vw;
+  left: 0;
+}
+
+.locomotive .wheels > div {
+  top: 4.4vw;
+  animation-delay: -0.6s;
+}
+
+.locomotive .wheels > div:first-child {
+  animation-delay: -0.9s;
+}
+
+.locomotive .normal-wheel:first-of-type {
+  left: .4vw;
+}
+
+.locomotive .normal-wheel:last-of-type {
+  right: .4vw;
+}
+
+.locomotive .trash {
+  height: 7vw;
+  width: 10vw;
+  position: absolute;
+  top: -3.6vw;
+  border: .6vw solid #000;
+  background-color: #3D9A01;
+  border-radius: 50%;
+  left: .4vw;
+  z-index: -1;
+}
+
+.tracks {
+  position: relative;
+  width: 40vw;
+  bottom: -2vw;
+  overflow: hidden;
+  height: .6vw;
+}
+
+.tracks span {
+  display: inline;
+  height: .6vw;
+  width: 40vw;
+  position: absolute;
+  left: 40vw;
+  background: linear-gradient(to right, black 0%, black 30%, transparent 30%, transparent 39%, black 39%, black 61%, black 65%, transparent 65%, transparent 70%, black 71%, black 100%);
+  animation: track 2s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+.tracks span:nth-child(2) {
+  animation-delay: -1s;
+}
+
+.smokes:before,
+.smokes:after,
+.smokes span:before {
+  display: block;
+  content: "";
+  height: 1.6vw;
+  width: 1.6vw;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 1.6vw;
+  top: 3vw;
+  z-index: -1;
+}
+
+.smokes:before {
+  animation: smoke 1s linear infinite;
+}
+
+.smokes span:before {
+  animation: smoke 1s linear infinite;
+  animation-delay: -0.6s;
+}
+
+.smokes:after {
+  animation: smoke 1s linear infinite;
+  animation-delay: -0.3s;
+}
+
+@keyframes smoke {
   100% {
-    transform: translate3D(-50%, -50%, 0) skewX(0deg) rotateX(0deg)
+    top: -10vw;
+    opacity: 0.5;
   }
+}
 
+@keyframes wheel-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes track {
+  100% {
+    left: -40vw;
+  }
 }

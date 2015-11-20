@@ -1,5 +1,8 @@
 @import url(//fonts.googleapis.com/css?family=EB+Garamond|Chewy);
 
+html { 
+  background:white; 
+}
 body {
   margin: 0 0;
   overflow: hidden;
