@@ -1,6 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=EB+Garamond|Chewy);
 
-
 body {
   margin: 0 0;
   overflow: hidden;
@@ -17,7 +16,7 @@ body {
 
 .inner {
   margin: 10% auto;
-  width: 100%; 
+  width: 100%;
 }
 
 .flex {
@@ -32,19 +31,54 @@ body {
 }
 
 h1 {
-  font-size: 70vw; 
-  width:100%; 
-  padding:0; 
-  margin:0;
+  font-size: 70vw;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-h2{
-  font-size: 35vw; 
-  width:100%; 
-  padding:0; 
-  margin:0;
-
+h2 {
+  font-size: 35vw;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
-.center {  
-  text-align:center;
+
+.center {
+  text-align: center;
+}
+
+.letter {
+  transform: translate3D(0%, 0%, 0);
+}
+
+.letter:hover {
+  animation: wiggle 1s cubic-bezier(0.48, 0.24, 0.51, 1.21) 1;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate3D(0%, 0%, 0) skewX(0deg) rotateX(0deg)
+  }
+  10% {
+    transform: translate3D(15%, -4%, 0) skewX(15deg) rotateX(30deg)
+  }
+  20% {
+    transform: translate3D(15%, 4%, 0) skewX(-15deg) rotateX(-30deg)
+  }
+  35% {
+    transform: translate3D(9%, -3%, 0) skewX(9deg) rotateX(20deg)
+  }
+  50% {
+    transform: translate3D(9%, 3%, 0) skewX(-9deg) rotateX(-20deg)
+  }
+  70% {
+    transform: translate3D(3%, 1%, 0) skewX(3deg) rotateX(15deg)
+  }
+  90% {
+    transform: translate3D(3%, -1%, 0) skewX(-3deg) rotateX(-15deg)
+  }
+  100% {
+    transform: translate3D(0%, 0%, 0) skewX(0deg) rotateX(0deg)
+  }
 }
