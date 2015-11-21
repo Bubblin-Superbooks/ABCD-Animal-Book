@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=EB+Garamond|Chewy);
+@import url(//fonts.googleapis.com/css?family=EB+Garamond|Chewy|Great+Vibes);
 
 html { 
   background:white; 
@@ -7,19 +7,16 @@ html {
 body {
   margin: 0 0;
   overflow: hidden;
-  font: 6vw/1.2 'EB Garamond', serif;
-  font-family: 'Chewy', serif;
-  background: white;
+  font: 6vw/1.2 'Chewy', serif;
 }
 
 .leaf {
   height: 100vh;
-  width: 80%;
-  margin: auto;
+  width: 100;
+  margin: 0 auto;
 }
 
 .inner {
-  margin: 10% auto;
   width: 100%;
 }
 
@@ -35,17 +32,21 @@ body {
 }
 
 h1 {
-  font-size: 70vw;
-  width: 100%;
+  font-size: 50vw;
+  width: 100vw;
   padding: 0;
   margin: 0;
 }
 
 h2 {
-  font-size: 35vw;
-  width: 100%;
+  font-size: 15vw;
+  width: 100vw;
   padding: 0;
   margin: 0;
+}
+
+p {
+  font-family: 'Great Vibes', cursive;
 }
 
 .center {
