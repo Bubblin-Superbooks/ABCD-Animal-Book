@@ -1,10 +1,19 @@
 body {
+  background: -webkit-linear-gradient(0deg, #1A2980 10%, #26D0CE 90%);
   background: linear-gradient(90deg, #1A2980 10%, #26D0CE 90%);
   height: 100vh;
   width: 100vw;
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -71,6 +80,8 @@ body {
   position: absolute;
   top: -2.2vw;
   left: .8vw;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   border-radius: 50% 50% 50% 50% / 90% 90% 40% 40%;
 }
@@ -84,8 +95,9 @@ body {
   right: 1vw;
   top: -3.6vw;
   border-radius: 50% 50% 50% 50% / 90% 90% 40% 40%;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
-  z-index: -1;
   background-color: #194488;
   border: .6vw solid #000;
 }
@@ -118,7 +130,6 @@ body {
   width: 1vw;
   left: -2.2vw;
   bottom: .4vw;
-  z-index: -1;
   background-color: #fff;
   border-radius: 50%;
   border: .6vw solid #000;
@@ -129,6 +140,7 @@ body {
   background-color: #F82510;
   border-radius: 50%;
   border: .6vw solid #000;
+  -webkit-animation: wheel-rotate 1s linear infinite;
   animation: wheel-rotate 1s linear infinite;
 }
 
@@ -157,12 +169,14 @@ body {
 .wheels .big-wheel {
   width: 4.4vw;
   height: 4.4vw;
+  -webkit-animation-delay: -0.3s;
   animation-delay: -0.3s;
 }
 
 .wheels .normal-wheel {
   height: 4vw;
   width: 4vw;
+  -webkit-animation-delay: -0.6s;
   animation-delay: -0.6s;
 }
 
@@ -180,6 +194,7 @@ body {
 .locomotive:before {
   content: "";
   width: 100%;
+  background: -webkit-linear-gradient(left, #000000 0%, #000000 8%, #f69f00 8%, #f69f00 15%, #000000 15%, #000000 28%, #000000 34%, #f69f00 34%, #f69f00 65%, #000000 65%, #000000 65%, #000000 100%);
   background: linear-gradient(to right, #000000 0%, #000000 8%, #f69f00 8%, #f69f00 15%, #000000 15%, #000000 28%, #000000 34%, #f69f00 34%, #f69f00 65%, #000000 65%, #000000 65%, #000000 100%);
   height: .6vw;
   position: absolute;
@@ -190,6 +205,7 @@ body {
 .locomotive:after {
   content: "";
   width: 100%;
+  background: -webkit-linear-gradient(left, #000000 0%, #000000 24%, #f69f00 24%, #f69f00 65%, #f69f00 65%, #000000 65%, #000000 85%, #f69f00 85%, #f69f00 90%, #000000 90%, #000000 100%);
   background: linear-gradient(to right, #000000 0%, #000000 24%, #f69f00 24%, #f69f00 65%, #f69f00 65%, #000000 65%, #000000 85%, #f69f00 85%, #f69f00 90%, #000000 90%, #000000 100%);
   height: .6vw;
   position: absolute;
@@ -199,10 +215,12 @@ body {
 
 .locomotive .wheels > div {
   top: 4.4vw;
+  -webkit-animation-delay: -0.6s;
   animation-delay: -0.6s;
 }
 
 .locomotive .wheels > div:first-child {
+  -webkit-animation-delay: -0.9s;
   animation-delay: -0.9s;
 }
 
@@ -215,21 +233,24 @@ body {
 }
 
 .locomotive .trash {
-  height: 7vw;
+  height: 4vw;
   width: 10vw;
   position: absolute;
-  top: -3.6vw;
-  border: .6vw solid #000;
+  top: -5.2vw;
+  border-color: #000;
+  border-top: .6vw solid;
+  border-left: .6vw solid;
+  border-right: .6vw solid;
   background-color: #3D9A01;
-  border-radius: 50%;
+  border-radius: 10vw 10vw 0 0;
   left: .4vw;
-  z-index: -1;
 }
 
 .tracks {
   position: relative;
   width: 40vw;
   bottom: -2vw;
+  left: -5vw;
   overflow: hidden;
   height: .6vw;
 }
@@ -240,12 +261,16 @@ body {
   width: 40vw;
   position: absolute;
   left: 40vw;
+  background: -webkit-linear-gradient(left, black 0%, black 30%, transparent 30%, transparent 39%, black 39%, black 61%, black 65%, transparent 65%, transparent 70%, black 71%, black 100%);
   background: linear-gradient(to right, black 0%, black 30%, transparent 30%, transparent 39%, black 39%, black 61%, black 65%, transparent 65%, transparent 70%, black 71%, black 100%);
+  -webkit-animation: track 2s linear infinite;
   animation: track 2s linear infinite;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .tracks span:nth-child(2) {
+  -webkit-animation-delay: -1s;
   animation-delay: -1s;
 }
 
@@ -254,40 +279,65 @@ body {
 .smokes span:before {
   display: block;
   content: "";
-  height: 1.6vw;
-  width: 1.6vw;
+  height: 1.5vw;
+  width: 1.5vw;
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  right: 1.6vw;
-  top: 3vw;
-  z-index: -1;
+  right: 1.5vw;
+  bottom: 4vw;
 }
 
 .smokes:before {
+  -webkit-animation: smoke 1s linear infinite;
   animation: smoke 1s linear infinite;
 }
 
 .smokes span:before {
+  -webkit-animation: smoke 1s linear infinite;
   animation: smoke 1s linear infinite;
+  -webkit-animation-delay: -0.6s;
   animation-delay: -0.6s;
 }
 
 .smokes:after {
+  -webkit-animation: smoke 1s linear infinite;
   animation: smoke 1s linear infinite;
+  -webkit-animation-delay: -0.3s;
   animation-delay: -0.3s;
+}
+
+@-webkit-keyframes smoke {
+  100% {
+    bottom: 12vw;
+    opacity: 0.5;
+  }
 }
 
 @keyframes smoke {
   100% {
-    top: -10vw;
+    bottom: 12vw;
     opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes wheel-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes wheel-rotate {
   100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes track {
+  100% {
+    left: -40vw;
   }
 }
 

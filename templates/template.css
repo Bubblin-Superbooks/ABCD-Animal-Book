@@ -1,7 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=EB+Garamond|Chewy|Great+Vibes);
-
-html { 
-  background:white; 
+html {
+  background: white;
 }
 
 body {
@@ -48,7 +47,10 @@ h2 {
 
 p {
   font-family: 'Great Vibes', cursive;
+  font-size: 10vw;
+  margin: 0;
 }
+
 .center {
   text-align: center;
 }
@@ -72,16 +74,16 @@ p {
     transform: translate3D(15%, 4%, 0) skewX(-15deg) rotateX(-30deg)
   }
   35% {
-    transform: translate3D(9%, -3%, 0) skewX(9deg) rotateX(20deg)
+    transform: translate3D(9%, -10%, 0) skewX(9deg) rotateX(20deg)
   }
   50% {
-    transform: translate3D(9%, 3%, 0) skewX(-9deg) rotateX(-20deg)
+    transform: translate3D(-4%, 10%, 0) skewX(-9deg) rotateX(-20deg)
   }
   70% {
     transform: translate3D(3%, 1%, 0) skewX(3deg) rotateX(15deg)
   }
-  90% {
-    transform: translate3D(3%, -1%, 0) skewX(-3deg) rotateX(-15deg)
+  80% {
+    transform: translate3D(-10%, -5%, 0) skewX(-3deg) rotateX(-45deg)
   }
   100% {
     transform: translate3D(0%, 0%, 0) skewX(0deg) rotateX(0deg)
