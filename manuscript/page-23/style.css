@@ -1,1 +1,266 @@
-body{background:rgba(200, 235, 255, 0.99); margin:0 0; overflow:hidden;}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #593c1e;
+  margin: 0;
+}
+
+.landscape {
+  position: relative;
+  height: calc(90vh);
+  background: #66aa63;
+  overflow: hidden;
+  background: -webkit-radial-gradient(left 60%, #efe7d2, #66aaf3);
+  background: radial-gradient(at left 60%, #efe7d2, #66aaf3);
+}
+
+.landscape div {
+  position: absolute;
+}
+
+.sun {
+  left: 0%;
+  bottom: 0vw;
+  width: 60vw;
+  height: 60vw;
+  margin-left: 5vw;
+  border-radius: 50%;
+  background: #ff8;
+}
+
+.level {
+  left: 50%;
+  width: 200vw;
+  height: 200vw;
+  border-radius: 50%;
+}
+
+.l1 {
+  bottom: -185vw;
+  margin-left: -70vw;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: -webkit-radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  background: radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  box-shadow: inset 1vw 0 2.4vw rgba(0, 0, 0, 0.2);
+}
+
+.l2 {
+  bottom: -180vw;
+  margin-left: -130vw;
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+  background: -webkit-radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  background: radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  box-shadow: inset 1vw 0 2.4vw rgba(0, 0, 0, 0.2);
+}
+
+.l3 {
+  bottom: -190vw;
+  margin-left: -180vw;
+  -webkit-transform: rotate(75deg);
+  -ms-transform: rotate(75deg);
+  transform: rotate(75deg);
+  background: -webkit-radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  background: radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  box-shadow: inset 1vw 0 2.4vw rgba(0, 0, 0, 0.2);
+}
+
+.l4 {
+  bottom: -180vw;
+  margin-left: -40vw;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: -webkit-radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  background: radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  box-shadow: inset 1vw 0 2.4vw rgba(0, 0, 0, 0.2);
+}
+
+.windmill {
+  width: 0.2vw;
+}
+
+.windmill .turbine {
+  top: -0.5vw;
+  left: -0.4vw;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  -webkit-animation: 7s rotate infinite linear;
+  animation: 7s rotate infinite linear;
+}
+
+.windmill .t {
+  left: 0.2vw;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.windmill.s1 {
+  width: 0.2vw;
+  height: 1.5vw;
+}
+
+.windmill.s1 .t {
+  top: -0.2vw;
+  left: 0.4vw;
+  width: 0.2vw;
+  height: 0.7vw;
+  border-width: 0;
+}
+
+.windmill.s2 {
+  height: 2vw;
+}
+
+.windmill.s2 .t {
+  top: -1vw;
+  border-bottom-width: 1.2vw;
+}
+
+.windmill.s3 {
+  height: 3.5vw;
+}
+
+.windmill.s3 .t {
+  top: -1.8vw;
+  border-bottom-width: 2vw;
+}
+
+.windmill.s4 {
+  height: 5vw;
+}
+
+.windmill.s4 .t {
+  top: -2.8vw;
+  border-bottom-width: 3vw;
+}
+
+.l1 .s1 {
+  background: #d0a273;
+}
+
+.l1 .s1 .t {
+  background: #d0a273;
+}
+
+.l2 .s2 {
+  background: #c4884d;
+}
+
+.l2 .s2 .t {
+  border-bottom-color: #c4884d;
+}
+
+.l3 .s3 {
+  background: #a66f37;
+}
+
+.l3 .s3 .t {
+  border-bottom-color: #a66f37;
+}
+
+.l4 .s4 {
+  background: #80552b;
+}
+
+.l4 .s4 .t {
+  border-bottom-color: #80552b;
+}
+
+.s1:nth-child(1) {
+  top: -0.5vw;
+  left: 87vw;
+}
+
+.s1:nth-child(2) {
+  top: -1.2vw;
+  left: 97vw;
+}
+
+.s1:nth-child(3) {
+  top: -0.9vw;
+  left: 107vw;
+}
+
+.s2:nth-child(1) {
+  top: 12.5vw;
+  left: 48.5vw;
+}
+
+.s2:nth-child(2) {
+  top: 8.5vw;
+  left: 55.5vw;
+}
+
+.s2:nth-child(3) {
+  top: 5vw;
+  left: 63.5vw;
+}
+
+.s3:nth-child(1) {
+  top: -1vw;
+  left: 78vw;
+}
+
+.s3:nth-child(2) {
+  top: -3vw;
+  left: 94vw;
+}
+
+.s3:nth-child(3) {
+  top: -2.5vw;
+  left: 112vw;
+}
+
+.s4:nth-child(1) {
+  top: -2.5vw;
+  left: 120vw;
+}
+
+.s4:nth-child(2) {
+  top: 2.8vw;
+  left: 138vw;
+}
+
+.s4:nth-child(3) {
+  top: 12.5vw;
+  left: 156vw;
+}
+
+.t1 {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.t2 {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+.t3 {
+  -webkit-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
