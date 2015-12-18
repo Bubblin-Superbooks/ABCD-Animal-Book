@@ -8,7 +8,7 @@ body {
 
 .landscape {
   position: relative;
-  height: calc(90vh);
+  height: 100vh;
   background: #66aa63;
   overflow: hidden;
   background: -webkit-radial-gradient(right 60%, #efe7d2, #66aaf3);
@@ -19,7 +19,26 @@ body {
   position: absolute;
 }
 
+@-webkit-keyframes sun {
+  0% {
+    bottom: -15vw;
+  }
+  100% {
+    bottom: -5vw;
+  }
+}
+
+@keyframes sun {
+  0% {
+    bottom: -15vw;
+  }
+  100% {
+    bottom: -5v;
+  }
+}
+
 .sun {
+  position: absolute;
   left: 0%;
   bottom: -5vw;
   width: 75vw;
@@ -30,6 +49,9 @@ body {
   box-shadow: 0 0 84px orange;
   background: -webkit-radial-gradient(#ff6 50%, #fa0 100%);
   background: radial-gradient(#ff6 50%, #fa0 100%);
+  -webkit-animation: sun 10s linear 1;
+  animation: sun 10s linear 1;
+  animation-fill-mode: forwards;
 }
 
 .ray_box {
@@ -206,20 +228,90 @@ body {
   box-shadow: inset 1vw 0 2.4vw rgba(0, 0, 0, 0.2);
 }
 
+@-webkit-keyframes cloud {
+  0% {
+    right: 5vw;
+  }
+  50% {
+    right: 25vw;
+  }
+  100% {
+    right: 5vw;
+  }
+}
 
-/*---------------------*/
+@keyframes cloud {
+  0% {
+    right: 5vw;
+  }
+  50% {
+    right: 25vw;
+  }
+  100% {
+    right: 5vw;
+  }
+}
+
+.cloud {
+  position: absolute;
+  width: 28vw;
+  height: 10vw;
+  background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: linear-gradient(to bottom, #f2f9fe 5%, #d6f0fd 100%);
+  border-radius: 8vw;
+  top: 20vw;
+  right: -14vw;
+  z-index: 1;
+  -webkit-animation: cloud 20s linear infinite;
+  animation: cloud 20s linear infinite;
+}
+
+.cloud.small {
+  top: 40vw;
+  -webkit-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  transform: scale(0.6);
+  -webkit-animation-delay: -1.5s;
+  animation-delay: -1.5s;
+  -webkit-animation-duration: 13.5s;
+  animation-duration: 13.5s;
+}
+
+.cloud:before,
+.cloud:after {
+  position: absolute;
+  content: "";
+  background: inherit;
+  z-index: 1;
+}
+
+.cloud:before {
+  width: 14.4vw;
+  height: 14.4vw;
+  top: -7.2vw;
+  left: 4vw;
+  border-radius: 16vw;
+}
+
+.cloud:after {
+  width: 8vw;
+  height: 8vw;
+  top: -4vw;
+  right: 4vw;
+  border-radius: 8vw;
+}
+
 
 
 /* Kangaroo */
 
 .contenedor {
   position: absolute;
-  width: 60vw;
-  height: 60vw;
-  border-radius: 100%;
+  bottom:0;
+  right:20vw;
+  width: 50vw;
+  height: 45vh;
   margin: 0 auto;
-  bottom: 1.7vw;
-  right: 15vw;
 }
 
 .cabeza {
@@ -264,8 +356,8 @@ body {
   position: absolute;
   width: 2.1vw;
   height: 2.1vw;
-  border-radius: 100%;
-  background: black;
+  border-radius: 60% 100%;
+  background: white;
   margin: 5.5vw 1.2vw;
   animation: baja 3s alternate infinite;
   -moz-animation: baja 3s alternate infinite;
@@ -277,8 +369,8 @@ body {
   display: block;
   width: 2.1vw;
   height: 2.1vw;
-  border-radius: 100%;
-  background: black;
+  border-radius: 100% 60%;
+  background: white;
   margin: 0.1vw 5vw;
 }
 
@@ -287,7 +379,7 @@ body {
   width: 0.9vw;
   height: 0.9vw;
   border-radius: 100%;
-  background: white;
+  background: #000;
   margin: -2.1vw 0.5vw;
   animation: baja3 3s alternate infinite;
   -moz-animation: baja3 3s alternate infinite;
@@ -300,30 +392,17 @@ body {
   width: 0.9vw;
   height: 0.9vw;
   border-radius: 100%;
-  background: white;
+  background: #000;
   margin: 0.1vw 5.2vw;
 }
 
-.hocico::before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 1.7vw solid transparent;
-  border-right: 1.7vw solid transparent;
-  border-bottom: 2.1vw solid black;
-  -moz-border-radius: 10vw / 5vw;
-  -webkit-border-radius: 10vw / 5vw;
-  border-radius: 10vw / 5vw;
-  margin: -1.7vw -0.2vw
-}
 
 .hocico {
   position: absolute;
   width: 3vw;
   height: 1.6vw;
   border-radius: 0 0 8vw 8vw;
-  background: #121212;
+  background: #500;
   margin: 9.3vw 3.3vw
 }
 
@@ -519,8 +598,8 @@ body {
   position: absolute;
   width: 1.6vw;
   height: 1.6vw;
-  border-radius: 100%;
-  background: black;
+  border-radius: 60% 100%;
+  background: white;
   margin: 2.5vw 0.5vw;
   animation: abre 2s linear infinite;
   -moz-animation: abre 2s linear infinite;
@@ -532,8 +611,8 @@ body {
   position: absolute;
   width: 1.6vw;
   height: 1.6vw;
-  border-radius: 100%;
-  background: black;
+  border-radius: 100% 60%;
+  background: white;
   margin: 0 2.5vw;
 }
 
@@ -542,7 +621,7 @@ body {
   width: 0.7vw;
   height: 0.7vw;
   border-radius: 100%;
-  background: white;
+  background: #000;
   margin: 0.2vw 0.3vw;
 }
 
@@ -552,7 +631,7 @@ body {
   width: 0.7vw;
   height: 0.7vw;
   border-radius: 100%;
-  background: white;
+  background: #000;
   margin: 0 2.7vw;
 }
 
@@ -561,22 +640,8 @@ body {
   width: 1.4vw;
   height: 0.9vw;
   border-radius: 0 0 8vw 8vw;
-  background: #121212;
+  background: #500;
   margin: 4.5vw 1.9vw
-}
-
-.hocico3::before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 0.9vw solid transparent;
-  border-right: 0.9vw solid transparent;
-  border-bottom: 1.2vw solid black;
-  -moz-border-radius: 10vw / 5vw;
-  -webkit-border-radius: 10vw / 5vw;
-  border-radius: 10vw / 5vw;
-  margin: -0.9vw -0.2vw
 }
 
 .cangurito {
@@ -649,55 +714,55 @@ body {
 
 @keyframes sube {
   0% {
-    margin: 8.3vw 12.5vw;
+    margin: 8.3vw 14.5vw;
   }
   25% {
-    margin: 8.3vw 12.5vw;
+    margin: 8.3vw 14.5vw;
   }
   50% {
-    margin: 0vw 12.5vw;
+    margin: 0vw 14.5vw;
   }
   75% {
-    margin: 0vw 12.5vw;
+    margin: 0vw 14.5vw;
   }
   100% {
-    margin: 0vw 12.5vw;
+    margin: 0vw 14.5vw;
   }
 }
 
 @-moz-keyframes sube {
   0% {
-    margin: 8.3vw 12.5vw;
+    margin: 8.3vw 14.5vw;
   }
   25% {
-    margin: 8.3vw 12.5vw;
+    margin: 8.3vw 14.5vw;
   }
   50% {
-    margin: 0vw 12.5vw;
+    margin: 0vw 14.5vw;
   }
   75% {
-    margin: 0vw 12.5vw;
+    margin: 0vw 14.5vw;
   }
   100% {
-    margin: 0vw 12.5vw;
+    margin: 0vw 14.5vw;
   }
 }
 
 @-webkit-keyframes sube {
   0% {
-    margin: 8.3vw 12.5vw;
+    margin: 8.3vw 14.5vw;
   }
   25% {
-    margin: 8.3vw 12.5vw;
+    margin: 8.3vw 14.5vw;
   }
   50% {
-    margin: 0vw 12.5vw;
+    margin: 0vw 14.5vw;
   }
   75% {
-    margin: 0vw 12.5vw;
+    margin: 0vw 14.5vw;
   }
   100% {
-    margin: 0vw 12.5vw;
+    margin: 0vw 14.5vw;
   }
 }
 

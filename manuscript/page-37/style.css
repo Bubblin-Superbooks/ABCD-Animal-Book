@@ -1,1 +1,122 @@
-body{background:rgba(200, 235, 255, 0.99); margin:0 0; overflow:hidden;}
+body {
+  margin: 0;
+  background: #92b2ff;
+  background: -webkit-radial-gradient(left 60%, #02b2ff, #66ad83);
+  background: radial-gradient(at left 60%, #02b2ff, #66ad83);
+}
+
+.carrot-wrap {
+  position: absolute;
+  bottom: 10vw;
+  right: 15vw;
+  width: 30vw;
+  height: 8vw;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.carrot-body__top {
+  width: 90%;
+  height: 4vw;
+  margin: 0 auto;
+  position: relative;
+  border: 0.2vw solid #a44;
+  border-bottom: none;
+  border-radius: 100% 20% 0 0;
+  background-color: orange;
+  box-shadow: 0 0 0.2vw rgba(100, 0, 0, 0.3) inset
+}
+
+
+/* большой лист морковки */
+
+.carrot-body__top:before {
+  content: '';
+  display: block;
+  width: 10vw;
+  height: 2vw;
+  position: absolute;
+  top: 2.4vw;
+  right: -10vw;
+  border: 0.2vw solid darkgreen;
+  border-radius: 50%;
+  background-color: green;
+  box-shadow: -0.2vw -0.2vw 1vw rgba(0, 0, 0, 0.3) inset;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+
+/* малый лист морковки */
+
+.carrot-body__top:after {
+  content: '';
+  display: block;
+  width: 6vw;
+  height: 1.2vw;
+  position: absolute;
+  top: 5vw;
+  right: -7vw;
+  border: 0.2vw solid darkgreen;
+  border-radius: 50%;
+  background-color: green;
+  box-shadow: -0.2vw -0.2vw 1vw rgba(0, 0, 0, 0.3) inset;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.carrot-body__bottom {
+  width: 90%;
+  height: 3.8vw;
+  margin: 0 auto;
+  position: relative;
+  top: -0.2vw;
+  border: 0.2vw solid #a44;
+  border-top: none;
+  border-radius: 0 0 20% 100%;
+  background-color: orange;
+  box-shadow: -1vw -1vw 0.6vw rgba(200, 0, 0, 0.2) inset;
+}
+
+
+/* острие моркови */
+
+.carrot-body__bottom:before {
+  content: '';
+  position: absolute;
+  top: -1.2vw;
+  left: -0.6vw;
+  width: 2vw;
+  height: 2.4vw;
+  background-color: orange;
+  overflow: hidden;
+  border-radius: 100% 0 0 100%;
+  border-left: 0.2vw solid #a44;
+  box-shadow: 0.4vw -0.4vw 0.6vw rgba(200, 0, 0, 0.1) inset;
+}
+
+
+/* хвост моркови */
+
+.carrot-body__bottom:after {
+  content: '';
+  position: absolute;
+  top: -3.4vw;
+  right: -1.4vw;
+  width: 3vw;
+  height: 6.8vw;
+  background-color: orange;
+  overflow: hidden;
+  border-radius: 0 100% 100% 0;
+  border-right: 0.4vw solid #a44;
+  box-shadow: -1vw -0.8vw 1vw rgba(200, 0, 0, 0.2) inset;
+}
