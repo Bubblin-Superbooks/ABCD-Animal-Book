@@ -1,1 +1,266 @@
-body{background:rgba(200, 235, 255, 0.99); margin:0 0; overflow:hidden;}
+body {
+  overflow: hidden;
+  background: -webkit-radial-gradient(#efe7d2 50%, #66ad83 100%);
+  background: radial-gradient(#efe7d2 50%, #66ad83 100%);
+  height:100vh;
+  width:100vw;
+}
+
+.head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 5em;
+  width: 5em;
+  background: GoldenRod;
+  z-index: 5;
+  border-radius: 100% 100% 30%;
+  -webkit-transform: translateY(-3.5em) translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translateY(-3.5em) translate(-50%, -50%) rotate(45deg);
+          transform: translateY(-3.5em) translate(-50%, -50%) rotate(45deg);
+  box-shadow: 0.2em 0.2em 0 0.24em #d6a21f inset, -0.1em -0.1em 0 0.1em #dcaa2b inset;
+}
+.head:before, .head:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: black;
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 100%;
+  box-shadow: 0.1em 0.1em 0 0.2em white inset;
+}
+.head:before {
+  -webkit-transform: translate(1em, 2em);
+      -ms-transform: translate(1em, 2em);
+          transform: translate(1em, 2em);
+}
+.head:after {
+  -webkit-transform: translate(2em, 1em);
+      -ms-transform: translate(2em, 1em);
+          transform: translate(2em, 1em);
+}
+
+.tentacle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2em;
+}
+.tentacle._1 {
+  z-index: 1;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.tentacle._1 div {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+.tentacle._2 {
+  z-index: 2;
+  -webkit-transform: translateY(2em) rotate(-130deg);
+      -ms-transform: translateY(2em) rotate(-130deg);
+          transform: translateY(2em) rotate(-130deg);
+}
+.tentacle._2 div {
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+}
+.tentacle._3 {
+  z-index: 3;
+  -webkit-transform: translateY(1em) rotate(-110deg);
+      -ms-transform: translateY(1em) rotate(-110deg);
+          transform: translateY(1em) rotate(-110deg);
+}
+.tentacle._3 div {
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
+}
+.tentacle._4 {
+  z-index: 4;
+  -webkit-transform: translateX(1.75em) translateY(2em) rotate(-170deg);
+      -ms-transform: translateX(1.75em) translateY(2em) rotate(-170deg);
+          transform: translateX(1.75em) translateY(2em) rotate(-170deg);
+}
+.tentacle._4 div {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+.tentacle._5 {
+  z-index: 1;
+  -webkit-transform: translateX(4em) rotateY(180deg) rotate(-90deg);
+          transform: translateX(4em) rotateY(180deg) rotate(-90deg);
+}
+.tentacle._5 div {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+.tentacle._6 {
+  z-index: 2;
+  -webkit-transform: translateX(4em) translateY(2em) rotateY(180deg) rotate(-130deg);
+          transform: translateX(4em) translateY(2em) rotateY(180deg) rotate(-130deg);
+}
+.tentacle._6 div {
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
+}
+.tentacle._7 {
+  z-index: 3;
+  -webkit-transform: translateX(4em) rotateY(180deg) translateY(1em) rotate(-110deg);
+          transform: translateX(4em) rotateY(180deg) translateY(1em) rotate(-110deg);
+}
+.tentacle._7 div {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+.tentacle._8 {
+  z-index: 4;
+  -webkit-transform: translateX(3em) rotateY(180deg) translateY(2em) rotate(-150deg);
+          transform: translateX(3em) rotateY(180deg) translateY(2em) rotate(-150deg);
+}
+.tentacle._8 div {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+.tentacle div {
+  font-size: 0.9em;
+  height: 3em;
+  width: 1em;
+  border-radius: 100% 100%;
+  background: GoldenRod;
+  box-shadow: 0.1em -0.8em 0 #dcaa2b inset, 0 0 0 0.3em #d6a21f inset;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-animation: rot 3s ease-in-out alternate infinite;
+          animation: rot 3s ease-in-out alternate infinite;
+}
+.tentacle div:before {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 100%;
+  background: salmon;
+  height: 0.7em;
+  width: 0.3em;
+  margin: -0.35em -0.15em;
+  border-radius: 100%;
+  box-shadow: -0.1em 0.1em 0 #c8665b inset, 0 0 0 0.1em #d56d61 inset;
+}
+.tentacle div div {
+  top: auto;
+  bottom: 1em;
+  left: auto;
+  right: 0;
+  -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.tentacle div div div {
+  -webkit-animation-delay: 0s !important;
+          animation-delay: 0s !important;
+}
+.tentacle div div div div {
+  -webkit-animation-delay: -0.2s !important;
+          animation-delay: -0.2s !important;
+}
+.tentacle div div div div div {
+  -webkit-animation-delay: -0.4s !important;
+          animation-delay: -0.4s !important;
+}
+.tentacle div div div div div div {
+  -webkit-animation-delay: -0.6s !important;
+          animation-delay: -0.6s !important;
+}
+.tentacle div div div div div div div {
+  -webkit-animation-delay: -0.8s !important;
+          animation-delay: -0.8s !important;
+}
+.tentacle div div div div div div div div {
+  -webkit-animation-delay: -1s !important;
+          animation-delay: -1s !important;
+}
+.tentacle div div div div div div div div div {
+  -webkit-animation-delay: -1.2s !important;
+          animation-delay: -1.2s !important;
+}
+.tentacle div div div div div div div div div div {
+  -webkit-animation-delay: -1.4s !important;
+          animation-delay: -1.4s !important;
+}
+.tentacle div div div div div div div div div div div {
+  -webkit-animation-delay: -1.6s !important;
+          animation-delay: -1.6s !important;
+}
+.tentacle div div div div div div div div div div div div {
+  -webkit-animation-delay: -1.8s !important;
+          animation-delay: -1.8s !important;
+}
+.tentacle div div div div div div div div div div div div div {
+  -webkit-animation-delay: -2s !important;
+          animation-delay: -2s !important;
+}
+.tentacle div div div div div div div div div div div div div div {
+  -webkit-animation-delay: -2.2s !important;
+          animation-delay: -2.2s !important;
+}
+.tentacle div div div div div div div div div div div div div div div {
+  -webkit-animation-delay: -2.4s !important;
+          animation-delay: -2.4s !important;
+}
+.tentacle div div div div div div div div div div div div div div div div {
+  -webkit-animation-delay: -2.6s !important;
+          animation-delay: -2.6s !important;
+}
+.tentacle div div div div div div div div div div div div div div div div div {
+  -webkit-animation-delay: -2.8s !important;
+          animation-delay: -2.8s !important;
+}
+.tentacle div div div div div div div div div div div div div div div div div div {
+  -webkit-animation-delay: -3s !important;
+          animation-delay: -3s !important;
+}
+.tentacle div div div div div div div div div div div div div div div div div div div {
+  -webkit-animation-delay: -3.2s !important;
+          animation-delay: -3.2s !important;
+}
+.tentacle div div div div div div div div div div div div div div div div div div div div {
+  -webkit-animation-delay: -3.4s !important;
+          animation-delay: -3.4s !important;
+}
+.tentacle div div div div div div div div div div div div div div div div div div div div div {
+  -webkit-animation-delay: -3.6s !important;
+          animation-delay: -3.6s !important;
+}
+.tentacle div div div div div div div div div div div div div div div div div div div div div div {
+  -webkit-animation-delay: -3.8s !important;
+          animation-delay: -3.8s !important;
+}
+
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}

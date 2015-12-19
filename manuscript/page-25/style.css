@@ -1,1 +1,81 @@
-body{background:rgba(200, 235, 255, 0.99); margin:0 0; overflow:hidden;}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #593c1e;
+  margin: 0;
+}
+
+.landscape {
+  position: relative;
+  height: calc(90vh);
+  background: #66aa63;
+  overflow: hidden;
+  background: -webkit-radial-gradient(left 60%, #efe7d2, #66aaf3);
+  background: radial-gradient(at left 60%, #efe7d2, #66aaf3);
+}
+
+.landscape div {
+  position: absolute;
+}
+
+.sun {
+  left: 0%;
+  bottom: 0vw;
+  width: 60vw;
+  height: 60vw;
+  margin-left: 5vw;
+  border-radius: 50%;
+  background: #ff8;
+}
+
+.level {
+  left: 50%;
+  width: 200vw;
+  height: 200vw;
+  border-radius: 50%;
+}
+
+.l1 {
+  bottom: -185vw;
+  margin-left: -70vw;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: -webkit-radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  background: radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  box-shadow: inset 1vw 0 2.4vw rgba(0, 0, 0, 0.2);
+}
+
+.l2 {
+  bottom: -180vw;
+  margin-left: -130vw;
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+  background: -webkit-radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  background: radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  box-shadow: inset 1vw 0 2.4vw rgba(0, 0, 0, 0.2);
+}
+
+.l3 {
+  bottom: -190vw;
+  margin-left: -180vw;
+  -webkit-transform: rotate(75deg);
+  -ms-transform: rotate(75deg);
+  transform: rotate(75deg);
+  background: -webkit-radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  background: radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  box-shadow: inset 1vw 0 2.4vw rgba(0, 0, 0, 0.2);
+}
+
+.l4 {
+  bottom: -180vw;
+  margin-left: -40vw;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: -webkit-radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  background: radial-gradient(ellipse at top left, #aad95d 0%, #bbc369 100%);
+  box-shadow: inset 1vw 0 2.4vw rgba(0, 0, 0, 0.2);
+}
