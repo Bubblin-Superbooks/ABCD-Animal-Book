@@ -2,10 +2,8 @@ body {
   height: 100vh;
   width: 100vw;
   background: #a0d8ef;
-  background: -moz-linear-gradient(top, #a0d8ef 0%, #caeaf7 50%, #43cc50 50%, #94cc99 100%);
-  background: -webkit-linear-gradient(top, #a0d8ef 0%, #caeaf7 50%, #43cc50 50%, #94cc99 100%);
-  background: linear-gradient(to bottom, #a0d8ef 0%, #caeaf7 50%, #43cc50 50%, #94cc99 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a0d8ef', endColorstr='#94cc99', GradientType=0);
+  background: -webkit-radial-gradient(right 60%, #94cc99, #a0d8ef);
+  background: radial-gradient(at right 60%, #94cc99, #a0d8ef);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,148 +22,163 @@ body {
 
 .container {
   position: relative;
-  width: 80vw;
-  height: 80vw;
+  width: 100vw;
+  height: 100vw;
   margin: 0px auto;
+}
+
+.land {
+  position: absolute;
+  top: 45vw;
+  left: 0;
+  width: 120vw;
+  height: 60vh;
+  border-radius: 40% 70% 0 0;
+  background: -moz-linear-gradient(top, #43cc50 50%, #94cc99 100%);
+  background: -webkit-linear-gradient(top, #43cc50 50%, #94cc99 100%);
+  background: linear-gradient(to bottom, #43cc50 50%, #94cc99 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a0d8ef', endColorstr='#94cc99', GradientType=0);
+  background: #43cc50;
 }
 
 .agua {
   position: absolute;
-  width: 50vw;
-  height: 25vw;
+  top: 10vw;
+  width: 80vw;
+  height: 35vw;
   border-radius: 100%;
   background: #44BFFC;
-  margin: 45vw 16vw;
-  border-top: 1vw inset #3390BF;
+  margin: 50vw 10vw;
+  border-top: 2vw inset #3390BF;
 }
 
 .agua::before {
   content: "";
   position: absolute;
-  width: 30vw;
-  height: 14vw;
+  width: 45vw;
+  height: 18vw;
   border-radius: 100%;
   background: rgba(255, 255, 255, .3);
-  margin: 2vw 10vw;
+  margin: 3vw 12vw;
 }
 
 .body {
   position: absolute;
-  width: 25vw;
-  height: 14vw;
+  width: 37.5vw;
+  height: 21vw;
   border-radius: 300vw;
   background: #646d76;
-  border: .3vw solid #333;
-  margin: -3vw 12vw;
+  border: .45vw solid #333;
+  margin: -4.5vw 18vw;
 }
 
 .cola {
   position: absolute;
-  width: 5vw;
-  height: 5vw;
-  border-radius: 100vw;
-  border-left: 1.5vw solid #333;
-  margin: -3vw 12vw
+  width: 7.5vw;
+  height: 7.5vw;
+  border-radius: 150vw;
+  border-left: 2.25vw solid #333;
+  margin: -4.5vw 18vw
 }
 
 .cabeza {
   position: absolute;
-  width: 13vw;
-  height: 8vw;
+  width: 19.5vw;
+  height: 12vw;
   background: #646d76;
-  border-radius: 112vw 112vw 0 0;
-  border: .3vw solid #333;
-  margin: -9vw 26vw
+  border-radius: 168vw 168vw 0 0;
+  border: .45vw solid #333;
+  margin: -13.5vw 39vw
 }
 
 .cabeza::before {
   content: "";
   position: absolute;
-  width: 14.9vw;
-  height: 10vw;
+  width: 22.39vw;
+  height: 15vw;
   border-radius: 100%;
-  border: .3vw solid #333;
+  border: .45vw solid #333;
   background: #646d76;
-  margin: 5vw -1.2vw
+  margin: 7.5vw -1.8vw
 }
 
 .ojos {
   position: absolute;
-  width: 3vw;
-  height: 3vw;
-  border-radius: 100vw;
+  width: 4.5vw;
+  height: 4.5vw;
+  border-radius: 150vw;
   background: white;
-  margin: 2.3vw 1.5vw;
+  margin: 3.45vw 2.25vw;
 }
 
 .ojos::before {
   content: "";
   position: absolute;
-  width: 3vw;
-  height: 3vw;
-  border-radius: 100vw;
+  width: 4.5vw;
+  height: 4.5vw;
+  border-radius: 150vw;
   background: white;
-  margin: 0vw 7vw;
+  margin: 0 10.5vw;
 }
 
 .iris {
   position: absolute;
-  width: 1.5vw;
-  height: 1.5vw;
-  border-radius: 100vw;
+  width: 2.25vw;
+  height: 2.25vw;
+  border-radius: 150vw;
   background: black;
-  margin: 1.5vw 1vw;
+  margin: 2.25vw 1.5vw;
 }
 
 .iris::before {
   content: "";
   position: absolute;
-  width: 1.5vw;
-  height: 1.5vw;
-  border-radius: 100vw;
+  width: 2.25vw;
+  height: 2.25vw;
+  border-radius: 150vw;
   background: black;
-  margin: 0vw 7vw;
+  margin: 0 10.5vw;
 }
 
 .boca {
   position: absolute;
-  width: 14.7vw;
-  height: 7vw;
+  width: 22.05vw;
+  height: 10.5vw;
   border-radius: 100%;
   background: #808080;
-  margin: 5.9vw -.9vw
+  margin: 8.85vw -1.05vw
 }
 
 .boca::before {
   content: "";
   display: block;
-  width: 2vw;
-  height: 2vw;
-  border-radius: 100vw;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 150vw;
   background: #646d76;
-  border: .3vw solid #333;
-  margin: 1.2vw 2.1vw
+  border: .45vw solid #333;
+  margin: 1.8vw 3.15vw
 }
 
 .boca::after {
   content: "";
   display: block;
-  width: 2vw;
-  height: 2vw;
-  border-radius: 100vw;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 150vw;
   background: #646d76;
-  border: .3vw solid #333;
-  margin: -3.5vw 10.5vw
+  border: .45vw solid #333;
+  margin: -5.25vw 15.75vw
 }
 
 .boca3 {
   position: absolute;
-  width: 10vw;
-  height: 5vw;
-  border-radius: 0 0 97vw 97vw;
+  width: 15vw;
+  height: 7.5vw;
+  border-radius: 0 0 143.5vw 143.5vw;
   background: #ff9999;
-  border: 1vw solid #555;
-  margin: 10vw .5vw;
+  border: 2vw solid #555;
+  margin: 15vw .75vw;
   animation: baja 3s alternate infinite;
   -moz-animation: baja 3s alternate infinite;
   -webkit-animation: baja 3s alternate infinite;
@@ -174,76 +187,76 @@ body {
 .boca3::before {
   content: "";
   display: block;
-  width: 1.2vw;
-  height: 1.2vw;
-  border-radius: 21vw 21vw 0 0;
+  width: 1.8vw;
+  height: 1.8vw;
+  border-radius: 31.5vw 31.5vw 0 0;
   background: white;
-  margin: 3.7vw 4.5vw;
+  margin: 5.55vw 6.75vw;
 }
 
 .orejas {
   position: absolute;
-  width: 3vw;
-  height: 2.5vw;
+  width: 4.5vw;
+  height: 3.75vw;
   border-radius: 100%;
   background: #646d76;
-  border: .3vw solid #333;
+  border: .45vw solid #333;
   transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  margin: -8vw 24vw
+  margin: -12vw 36vw
 }
 
 .orejas::before {
   content: "";
   position: absolute;
-  width: 3vw;
-  height: 2.5vw;
+  width: 4.5vw;
+  height: 3.75vw;
   border-radius: 100%;
   background: #646d76;
-  border: .3vw solid #333;
+  border: .45vw solid #333;
   transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
-  margin: -10vw 10vw
+  margin: -15vw 15vw
 }
 
 .sol {
   position: absolute;
-  width: 30vw;
-  height: 16vw;
-  border-radius: 251vw 251vw 0 0;
+  width: 45vw;
+  height: 24vw;
+  border-radius: 376.5vw 376.5vw 0 0;
   background: #eaad3a;
   background: -moz-linear-gradient(top, #eaad3a -1%, #f7d083 100%);
   background: -webkit-linear-gradient(top, #eaad3a -1%, #f7d083 100%);
   background: linear-gradient(to bottom, #eaad3a -1%, #f7d083 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eaad3a', endColorstr='#f7d083', GradientType=0);
-  margin: 23.7vw 25vw
+  margin: 25.55vw 25vw
 }
 
 @keyframes baja {
   0% {
-    margin: 6.9vw 0.7vw;
+    margin: 11.8vw 1.05vw;
   }
   100% {
-    margin: 10vw .7vw;
+    margin: 15vw 1.05vw;
   }
 }
 
 @-moz-keyframes baja {
   0% {
-    margin: 6.9vw 0.7vw;
+    margin: 11.8vw 1.05vw;
   }
   100% {
-    margin: 10vw .7vw;
+    margin: 15vw 1.05vw;
   }
 }
 
 @-webkit-keyframes baja {
   0% {
-    margin: 6.9vw 0.7vw;
+    margin: 11.8vw 1.05vw;
   }
   100% {
-    margin: 10vw .7vw;
+    margin: 15vw 1.05vw;
   }
 }
