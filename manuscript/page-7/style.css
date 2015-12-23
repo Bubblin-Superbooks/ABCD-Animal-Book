@@ -1,1 +1,9 @@
-.stroke{ text-shadow: 3px 3px 0 #0a0, -1px -1px 0 #0a0, 1px -1px 0 #0a0, -1px 1px 0 #0a0, 1px 1px 0 #0a0;}
+body {
+  background: #efe7d2;
+  background: -webkit-radial-gradient(left 60%, #efe7d2, #66ad83);
+  background: radial-gradient(at left 60%, #efe7d2, #66ad83);
+}
+
+.stroke {
+  text-shadow: 3px 3px 0 #fa0, -1px -1px 0 #fa0, 1px -1px 0 #fa0, -1px 1px 0 #fa0, 1px 1px 0 #fa0;
+}

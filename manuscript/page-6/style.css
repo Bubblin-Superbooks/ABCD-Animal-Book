@@ -1,8 +1,9 @@
 body {
   height: 100vh;
   width: 100vw;
-  background: -webkit-radial-gradient(#efe7d2 50%, #66ad83 100%);
-  background: radial-gradient(#efe7d2 50%, #66ad83 100%);
+  background: #efe7d2; 
+  background: -webkit-radial-gradient(right 60%, #efe7d2, #66ad83); 
+  background: radial-gradient(at right 60%, #efe7d2, #66ad83);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -33,6 +34,8 @@ body {
   -webkit-animation: anim-body-wrapper 2s ease-in-out infinite alternate;
   animation: anim-body-wrapper 2s ease-in-out infinite alternate;
 }
+
+
 /*HEAD*/
 
 .head-wrapper {
@@ -51,15 +54,15 @@ body {
   height: 42.25vw;
   background: #e8a554;
   /* Old browsers */
-  
   background: -webkit-linear-gradient(top, #e8a554 40%, #db914a 99%);
   background: linear-gradient(to bottom, #e8a554 40%, #db914a 99%);
   /* W3C */
-  
   position: relative;
   z-index: 10;
   top: 3.75vw;
 }
+
+
 /*Ears*/
 
 .ears {
@@ -77,7 +80,6 @@ body {
   position: relative;
   background: #efc767;
   /* Old browsers */
-  
   background: -webkit-linear-gradient(top, #efc767 0%, #ca7c3a 100%);
   background: linear-gradient(to bottom, #efc767 0%, #ca7c3a 100%);
   /* W3C */
@@ -92,7 +94,6 @@ body {
   border-radius: 50%;
   background: #975d2d;
   /* Old browsers */
-  
   background: -webkit-linear-gradient(top, #975d2d 0%, #6f4326 100%);
   background: linear-gradient(to bottom, #975d2d 0%, #6f4326 100%);
   /* W3C */
@@ -107,6 +108,8 @@ body {
 .leg2 {
   float: left;
 }
+
+
 /*Eyes*/
 
 .eyes {
@@ -120,11 +123,9 @@ body {
   border-top: 1.25vw solid #89542A;
   background: #e2a04c;
   /* Old browsers */
-  
   background: -webkit-linear-gradient(315deg, #e2a04c 0%, #efaf58 99%);
   background: linear-gradient(135deg, #e2a04c 0%, #efaf58 99%);
   /* W3C */
-  
   width: 12.5vw;
   height: 15.5vw;
   top: -8.75vw;
@@ -180,6 +181,8 @@ body {
   -ms-transform: translatex(-50%);
   transform: translatex(-50%);
 }
+
+
 /*Muzzle*/
 
 .muzzle {
@@ -225,6 +228,8 @@ body {
   width: 0.5vw;
   background-color: #78421c;
 }
+
+
 /*BELLY*/
 
 #belly {
@@ -233,11 +238,9 @@ body {
   height: 50vw;
   background: #d38442;
   /* Old browsers */
-  
   background: -webkit-radial-gradient(center, ellipse, #d38442 48%, #b75b26 99%);
   background: radial-gradient(ellipse at center, #d38442 48%, #b75b26 99%);
   /* W3C */
-  
   clear: both;
   position: relative;
   top: -10vw;
@@ -274,6 +277,8 @@ body {
 .belly_inner2 {
   right: 3.75vw;
 }
+
+
 /*HANDS*/
 
 .hands {
@@ -287,7 +292,6 @@ body {
   background: -webkit-linear-gradient(315deg, #d88946 14%, #e5ad4c 100%);
   background: linear-gradient(135deg, #d88946 14%, #e5ad4c 100%);
   /* W3C */
-  
   border-radius: 50%;
   content: "";
   display: block;
@@ -316,6 +320,8 @@ body {
   transform: rotate(-45deg);
   float: right;
 }
+
+
 /*LEGS*/
 
 .legs {
@@ -334,7 +340,6 @@ body {
   border: 0.25vw solid #e4a241;
   background: #df9a4c;
   /* Old browsers */
-  
   background: -webkit-linear-gradient(315deg, #df9a4c 41%, #d58443 90%);
   background: linear-gradient(135deg, #df9a4c 41%, #d58443 90%);
 }
@@ -364,7 +369,6 @@ body {
   background: -webkit-linear-gradient(315deg, #e2c897 14%, #fdedd3 100%);
   background: linear-gradient(135deg, #e2c897 14%, #fdedd3 100%);
   /* W3C */
-  
   border-radius: 50%;
   width: 17.5vw;
   height: 22.5vw;
@@ -372,6 +376,8 @@ body {
   top: 2.5vw;
   left: 2.5vw;
 }
+
+
 /*Shadow*/
 
 .shadow {
@@ -388,6 +394,8 @@ body {
   -webkit-animation: shadow-anim 2s ease infinite alternate;
   animation: shadow-anim 2s ease infinite alternate;
 }
+
+
 /*Animation*/
 
 @-webkit-keyframes shadow-anim {
