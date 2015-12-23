@@ -1,1 +1,11 @@
-body{background:rgba(200, 235, 255, 0.99); margin:0 0; overflow:hidden;}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.inner {
+  width: 75vw;
+}
+
+.the {
+  font-size=: 18vw;
+}

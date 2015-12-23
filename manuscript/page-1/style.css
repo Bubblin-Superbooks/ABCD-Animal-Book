@@ -1,4 +1,5 @@
 body {
+  color: white;
   background: -webkit-radial-gradient(#01b5f0 50%, #66adf3 100%);
   background: radial-gradient(#01b5f0 50%, #66ad83 100%);
   height: 100vh;
@@ -21,6 +22,7 @@ body {
   position: absolute;
   width: 100vw;
   bottom: 10vh;
+  color: black;
 }
 
 .toy-train {
@@ -366,7 +368,7 @@ h1 {
   text-align: center;
   width: 60vw;
   margin: 20% auto 0;
-  text-shadow: 0 0 0 rgb(-14, 144, 41), -0.2vw 0.2vw 0 rgb(-19, 139, 36), -0.4vw 0.4vw 0 rgb(-23, 135, 32), -0.6vw 0.6vw 0 rgb(-27, 131, 28), -0.8vw 0.8vw 0 rgb(-32, 126, 23), -1vw 1vw 0 rgb(-36, 122, 19), -1.2vw 1.2vw 0 rgb(-40, 118, 15), -1.4vw 1.4vw 0 rgb(-45, 113, 10), -1.6vw 1.6vw 0 rgb(-49, 109, 6), -1.8vw 1.8vw 0 rgb(-53, 105, 2), -2vw 2vw 0 rgb(-58, 100, -3), -2.2vw 2.2vw 0 rgb(-62, 96, -7), -2.4vw 2.4vw 0 rgb(-67, 91, -12), -2.6vw 2.6vw 0 rgb(-71, 87, -16), -2.8vw 2.8vw 0 rgb(-75, 83, -20), -3vw 3vw 0 rgb(-80, 78, -25), -3.2vw 3.2vw 0 rgb(-84, 74, -29), -3.4vw 3.4vw 0 rgb(-88, 70, -33), -3.6vw 3.6vw 0 rgb(-93, 65, -38), -3.8vw 3.8vw 0 rgb(-97, 61, -42), -4vw 4vw 0 rgb(-101, 57, -46);
+  text-shadow: 0px 0px 0 rgb(-14, 144, 41), -1px 1px 0 rgb(-19, 139, 36), -2px 2px 0 rgb(-23, 135, 32), -3px 3px 0 rgb(-27, 131, 28), -4px 4px 0 rgb(-32, 126, 23), -5px 5px 0 rgb(-36, 122, 19), -6px 6px 0 rgb(-40, 118, 15), -7px 7px 0 rgb(-45, 113, 10), -8px 8px 0 rgb(-49, 109, 6), -9px 9px 0 rgb(-53, 105, 2), -10px 10px 0 rgb(-58, 100, -3), -11px 11px 0 rgb(-62, 96, -7), -12px 12px 0 rgb(-67, 91, -12), -13px 13px 0 rgb(-71, 87, -16), -14px 14px 0 rgb(-75, 83, -20), -15px 15px 0 rgb(-80, 78, -25), -16px 16px 0 rgb(-84, 74, -29), -17px 17px 0 rgb(-88, 70, -33), -18px 18px 0 rgb(-93, 65, -38), -19px 19px 0 rgb(-97, 61, -42), -20px 20px 0 rgb(-101, 57, -46);
 }
 
 h1 span {
