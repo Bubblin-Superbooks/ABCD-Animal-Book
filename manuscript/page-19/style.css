@@ -2,8 +2,8 @@ body {
   height: 100vh;
   width: 100vw;
   background: #a0d8ef;
-  background: -webkit-radial-gradient(left 60%, #94cc99, #a0d8ef);
-  background: radial-gradient(at left 60%, #94cc99, #a0d8ef);
+  background: -webkit-radial-gradient(left 60%, #94ccf9, #a0d8ef);
+  background: radial-gradient(at left 60%, #94ccf9, #a0d8ef);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18,27 +18,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
   margin: 0;
-}
-
-.container {
-  position: relative;
-  width: 100vw;
-  height: 100vw;
-  margin: 0px auto;
-}
-
-.land {
-  position: absolute;
-  top: 69vw;
-  left: -76vw;
-  width: 95vw;
-  height: 55vh;
-  border-radius: 40% 80% 80% 0;
-  background: -moz-linear-gradient(top, #43cc50 50%, #94cc99 100%);
-  background: -webkit-linear-gradient(top, #43cc50 50%, #94cc99 100%);
-  background: linear-gradient(to bottom, #43cc50 50%, #94cc99 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a0d8ef', endColorstr='#94cc99', GradientType=0);
-  background: #43cc50;
 }
 
 .stroke {
