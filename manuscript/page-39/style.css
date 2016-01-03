@@ -1,8 +1,13 @@
 body {
   margin: 0;
   background: #02b2ff;
-  background: -webkit-radial-gradient(left 60%, #02b2ff, #66ad83);
+  background: -webkit-radial-gradient(left 60%, #a2b2ff, #66ad83);
+  background: -webkit-radial-gradient(at left 60%, #02b2ff, #66ad83);
   background: radial-gradient(at left 60%, #02b2ff, #66ad83);
+}
+
+.stroke {
+  text-shadow: 3px 3px 0 pink, -1px -1px 0 #0f0, 1px -1px 0 orange, -1px 1px 0 orange, 1px 1px 0 orange;
 }
 
 .carrot-wrap {
@@ -12,9 +17,6 @@ body {
   width: 30vw;
   height: 8vw;
   -webkit-transform: rotate(-10deg);
-  -moz-transform: rotate(-10deg);
-  -o-transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg);
   transform: rotate(-10deg);
 }
 
@@ -46,9 +48,6 @@ body {
   background-color: green;
   box-shadow: -0.2vw -0.2vw 1vw rgba(0, 0, 0, 0.3) inset;
   -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -o-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
   transform: rotate(-5deg);
 }
 
@@ -68,9 +67,6 @@ body {
   background-color: green;
   box-shadow: -0.2vw -0.2vw 1vw rgba(0, 0, 0, 0.3) inset;
   -webkit-transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
-  -o-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
   transform: rotate(30deg);
 }
 
