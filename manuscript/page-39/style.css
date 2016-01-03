@@ -33,8 +33,6 @@ body {
 }
 
 
-/* большой лист морковки */
-
 .carrot-body__top:before {
   content: '';
   display: block;
@@ -51,8 +49,6 @@ body {
   transform: rotate(-5deg);
 }
 
-
-/* малый лист морковки */
 
 .carrot-body__top:after {
   content: '';
@@ -84,8 +80,6 @@ body {
 }
 
 
-/* острие моркови */
-
 .carrot-body__bottom:before {
   content: '';
   position: absolute;
@@ -101,7 +95,6 @@ body {
 }
 
 
-/* хвост моркови */
 
 .carrot-body__bottom:after {
   content: '';
