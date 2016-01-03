@@ -1,1 +1,268 @@
-body{background:rgba(200, 235, 255, 0.99); margin:0 0; overflow:hidden;}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #f4e0a4;
+  background: -webkit-radial-gradient(right 60%, , #eaac60, #f4e0a4);
+  background: radial-gradient(at right 60%, #eaac60, #f4e0a4);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+.contenedor {
+  position: relative;
+  width: 80vw;
+  height: 80vw;
+  margin: 90px auto;
+}
+
+.cabeza {
+  position: absolute;
+  width: 21vw;
+  height: 17vw;
+  border-radius: 100%;
+  background: #0bae4c;
+  border-bottom: .5vw solid #70c043;
+  margin: 28vw 45vw
+}
+
+.cabeza::before {
+  content: "";
+  position: absolute;
+  width: 9.7vw;
+  height: 7vw;
+  border-radius: 100%;
+  border-bottom: 1.2vw solid #70c043;
+  margin: 5vw 11.2vw
+}
+
+.cabeza3 {
+  position: absolute;
+  width: 14vw;
+  height: 9vw;
+  border-radius: 0 0 132vw 132vw;
+  ;
+  background: #abce38;
+  margin: 41.2vw 47vw
+}
+
+.cabeza7 {
+  position: absolute;
+  width: 14vw;
+  height: 12vw;
+  border-radius: 132vw 132vw 0 0;
+  ;
+  background: #abce38;
+  margin: 24vw 45.5vw
+}
+
+.ojos {
+  position: absolute;
+  width: 6.5vw;
+  height: 7.5vw;
+  border-radius: 100%;
+  background: white;
+  border: 2.1vw solid #0bae4c;
+  margin: -1vw 7vw
+}
+
+.iris {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 100vw;
+  background: black;
+  margin: 2.1vw 1.2vw;
+  animation: sacar3 1.2s alternate infinite;
+  -moz-animation: sacar3 1.2s alternate infinite;
+  -webkit-animation: sacar3 1.2s alternate infinite;
+}
+
+.iris::before {
+  content: "";
+  position: absolute;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 100vw;
+  background: white;
+  margin: .5vw .6vw
+}
+
+.body {
+  position: absolute;
+  width: 40vw;
+  height: 21vw;
+  border-radius: 0 0 330vw 600vw;
+  border-bottom: 21vw solid #5dae45;
+  margin: 21vw 16vw
+}
+
+.legs {
+  position: absolute;
+  width: 4vw;
+  height: 16vw;
+  border-radius: 35vw 35vw 0 0;
+  background: #0bae4c;
+  margin: 33vw 30.5vw;
+  transform: rotate(-21deg);
+  -moz-transform: rotate(-21deg);
+  -webkit-transform: rotate(-21deg);
+}
+
+.legs::before {
+  content: "";
+  position: absolute;
+  width: 4vw;
+  height: 16vw;
+  border-radius: 35vw 35vw 0 0;
+  background: #0bae4c;
+  margin: -9vw -19vw;
+  transform: rotate(42deg);
+  -moz-transform: rotate(42deg);
+  -webkit-transform: rotate(42deg);
+}
+
+.dedos {
+  position: absolute;
+  width: 7vw;
+  height: 2vw;
+  border-radius: 100%;
+  background: #0bae4c;
+  margin: 47vw 35vw;
+}
+
+.dedos::before {
+  content: "";
+  position: absolute;
+  width: 2vw;
+  height: 7vw;
+  border-radius: 100%;
+  background: #0bae4c;
+  margin: 0vw -.5vw;
+}
+
+.dedos::after {
+  content: "";
+  position: absolute;
+  width: 7vw;
+  height: 2vw;
+  border-radius: 100%;
+  background: #0bae4c;
+  margin: 1vw -7vw;
+}
+
+.dedos3 {
+  position: absolute;
+  width: 7vw;
+  height: 2vw;
+  border-radius: 100%;
+  background: #0bae4c;
+  margin: 46vw 9vw;
+}
+
+.dedos3::before {
+  content: "";
+  position: absolute;
+  width: 2vw;
+  height: 7vw;
+  border-radius: 100%;
+  background: #0bae4c;
+  margin: 0vw -1.2vw;
+}
+
+.dedos3::after {
+  content: "";
+  position: absolute;
+  width: 7vw;
+  height: 2vw;
+  border-radius: 100%;
+  background: #0bae4c;
+  margin: 0vw -7.5vw;
+}
+
+.cola {
+  position: absolute;
+  width: 25vw;
+  height: 27vw;
+  border-radius: 100%;
+  border-left: 6vw solid #0bae4c;
+  border-top: 4vw solid #0bae4c;
+  margin: 16vw 12vw
+}
+
+.lengua {
+  position: absolute;
+  width: 19vw;
+  height: 1.2vw;
+  border-radius: 12vw;
+  background: #ff6666;
+  margin: 38vw 45.5vw;
+  animation: sacar 1.2s alternate infinite;
+  -moz-animation: sacar 1.2s alternate infinite;
+  -webkit-animation: sacar 1.2s alternate infinite;
+}
+
+@keyframes sacar {
+  0% {
+    margin: 38vw 45.5vw;
+  }
+  100% {
+    margin: 38vw 63vw;
+  }
+}
+
+@-moz-keyframes sacar {
+  0% {
+    margin: 38vw 45.5vw;
+  }
+  100% {
+    margin: 38vw 63vw;
+  }
+}
+
+@-webkit-keyframes sacar {
+  0% {
+    margin: 38vw 45.5vw;
+  }
+  100% {
+    margin: 38vw 63vw;
+  }
+}
+
+@keyframes sacar3 {
+  0% {
+    margin: 1.2vw 1.2vw;
+  }
+  100% {
+    margin: 2.1vw 1.2vw;
+  }
+}
+
+@-moz-keyframes sacar3 {
+  0% {
+    margin: 1.2vw 1.2vw;
+  }
+  100% {
+    margin: 2.1vw 1.2vw;
+  }
+}
+
+@-webkit-keyframes sacar3 {
+  0% {
+    margin: 1.2vw 1.2vw;
+  }
+  100% {
+    margin: 2.1vw 1.2vw;
+  }
+}
