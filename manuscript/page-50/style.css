@@ -1,22 +1,15 @@
-html {
-  height: 100%
-}
-
-#scene {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+body {
+  height: 100vh;
+  width: 100vw;
   overflow: hidden;
-  background-image: radial-gradient(ellipse at center, rgba(3, 181, 252, 0.8) 0%, rgba(5, 132, 250, 0.8) 100%);
+  background: -webkit-radial-gradient(right 60%, #efe7d2, #66ad83);
+  background: radial-gradient(at right 60%, #efe7d2, #66ad83);
 }
 
 .xerus {
-  margin-top: -20vw;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 65%;
 }
 
 .xerus .shadow {
@@ -238,14 +231,14 @@ html {
 }
 
 .xerus .tail > div {
-  background: #9a5306;
+  background: #7a5306;
 }
 
 .xerus .tail .main {
-  border-right: 19vw solid #b07705;
+  border-right: 20vw solid #b07705;
   position: absolute;
   z-index: 2;
-  top: -62.5vw;
+  top: -63vw;
   left: -37.5vw;
   width: 34vw;
   height: 52.5vw;
