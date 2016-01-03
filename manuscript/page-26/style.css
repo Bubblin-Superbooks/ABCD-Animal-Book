@@ -1,1 +1,318 @@
-body{background:rgba(200, 235, 255, 0.99); margin:0 0; overflow:hidden;}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #339bb6;
+  background: -webkit-radial-gradient(right 60%, #339bb6, #db8c78);
+  background: radial-gradient(at right 60%, #339bb6, #db8c78);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+.contenedor {
+  position: relative;
+  width: 80vw;
+  height: 80vw;
+  margin: 90px auto;
+}
+
+.llama {
+  position: absolute;
+  margin: -6vw 1vw
+}
+
+.cabeza {
+  position: absolute;
+  width: 13.5vw;
+  height: 8vw;
+  border-radius: 112vw 112vw 0 0;
+  background: white;
+  margin: 14.9vw 28vw
+}
+
+.cabeza::before {
+  content: "";
+  display: block;
+  border-bottom: 7vw solid white;
+  border-left: .5vw solid transparent;
+  border-right: .6vw solid transparent;
+  height: 0;
+  width: 13.5vw;
+  margin: 7vw -.5vw
+}
+
+.cabeza3 {
+  content: "";
+  position: absolute;
+  width: 14.4vw;
+  height: 8vw;
+  border-radius: 0 0 125vw 125vw;
+  background: white;
+  margin: 28.5vw 27.5vw
+}
+
+.ojos {
+  position: absolute;
+  width: 3vw;
+  height: 2.7vw;
+  border-radius: 30vw 300vw 300vw 500vw;
+  background: white;
+  border: .5vw solid #333;
+  margin: -12.3vw 1vw;
+  animation: baja3 .9s alternate infinite;
+  -moz-animation: baja3 .9s alternate infinite;
+  -webkit-animation: baja3 .9s alternate infinite;
+}
+
+.ojos::before {
+  content: "";
+  position: absolute;
+  width: 3vw;
+  height: 2.7vw;
+  border-radius: 300vw 30vw 500vw 300vw;
+  background: white;
+  border: .5vw solid #333;
+  margin: -.5vw 7.2vw
+}
+
+.iris {
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 100vw;
+  background: black;
+  margin: 1vw 1vw;
+}
+
+.iris::before {
+  content: "";
+  position: absolute;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 100vw;
+  background: black;
+  margin: 0vw 6.5vw;
+}
+
+.ojos3 {
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 100vw;
+  border-bottom: 1vw solid #333;
+  margin: -18.9vw -3vw;
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  animation: baja .9s alternate infinite;
+  -moz-animation: baja .9s alternate infinite;
+  -webkit-animation: baja .9s alternate infinite;
+}
+
+.ojos3::before {
+  content: "";
+  position: absolute;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 100vw;
+  border-bottom: 1vw solid #333;
+  margin: -6vw 10.9vw;
+  transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+}
+
+.nariz {
+  position: absolute;
+  width: 2.7vw;
+  height: 2.5vw;
+  -webkit-border-radius: 63vw 63vw 63vw 63vw / 108vw 108vw 72vw 72vw;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: #FC9999;
+  margin: 27.5vw 33.44vw;
+}
+
+.nariz::before {
+  content: "";
+  display: block;
+  width: .7vw;
+  height: .7vw;
+  border-radius: 100vw;
+  background: white;
+  margin: .4vw 1.5vw
+}
+
+.hocico {
+  position: absolute;
+  width: 3.5vw;
+  height: 6vw;
+  border-radius: 100%;
+  background: #DD878D;
+  border: .3vw solid #333;
+  margin: 28vw 32.8vw
+}
+
+.hocico::before {
+  content: "";
+  display: block;
+  width: 3vw;
+  height: 4vw;
+  border-radius: 100%;
+  background: #DBABAE;
+  transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -webkit- transform: rotate(3deg);
+  margin: 0vw -1vw;
+}
+
+.hocico::after {
+  content: "";
+  display: block;
+  width: 3vw;
+  height: 4vw;
+  border-radius: 100%;
+  background: #DBABAE;
+  transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  -webkit- transform: rotate(-6deg);
+  margin: -4vw 1.5vw;
+}
+
+.orejas {
+  position: absolute;
+  width: 3vw;
+  height: 16vw;
+  border-radius: 100%;
+  background: #DBABAE;
+  border-left: 1vw solid white;
+  margin: 3vw 28vw;
+  transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  -webkit- transform: rotate(-6deg);
+}
+
+.orejas::before {
+  content: "";
+  position: absolute;
+  width: 3vw;
+  height: 16vw;
+  border-radius: 100%;
+  background: #DBABAE;
+  border-right: 1vw solid white;
+  margin: 1vw 8vw;
+  transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -webkit- transform: rotate(6deg);
+}
+
+.cuello {
+  position: absolute;
+  border-bottom: 27vw solid #ddd;
+  border-left: 1.5vw solid transparent;
+  border-right: 1.5vw solid transparent;
+  height: 0;
+  width: 6vw;
+  margin: 35vw 30vw
+}
+
+.body {
+  position: absolute;
+  width: 33vw;
+  height: 21vw;
+  border-radius: 100%;
+  background: #ddd;
+  ;
+  margin: 51vw 29.9vw
+}
+
+.legs {
+  position: absolute;
+  width: 5vw;
+  height: 25vw;
+  border-radius: 0 0 30vw 30vw;
+  background: #ddd;
+  border-bottom: 3vw solid #333;
+  margin: 13vw 2vw
+}
+
+.legs::before {
+  content: "";
+  position: absolute;
+  width: 5vw;
+  height: 25vw;
+  border-radius: 0 0 30vw 30vw;
+  background: #ddd;
+  border-bottom: 3vw solid #333;
+  margin: 0vw 23vw
+}
+
+.legs3 {
+  position: absolute;
+  width: 5vw;
+  height: 25vw;
+  border-radius: 0 0 30vw 30vw;
+  background: lightgray;
+  border-bottom: 3vw solid #333;
+  margin: 64vw 31vw;
+  transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -webkit- transform: rotate(6deg);
+}
+
+.legs3::before {
+  content: "";
+  position: absolute;
+  width: 5vw;
+  height: 25vw;
+  border-radius: 0 0 30vw 30vw;
+  background: lightgray;
+  border-bottom: 3vw solid #333;
+  margin: -3vw 23vw
+}
+
+.cola {
+  position: absolute;
+  width: 9vw;
+  height: 9vw;
+  border-radius: 100vw;
+  border-top: 2.5vw solid white;
+  margin: 55vw 58vw
+}
+
+@keyframes baja {
+  0% {
+    margin: -19.12vw -3vw;
+  }
+  100% {
+    margin: -18.7vw -3vw;
+  }
+}
+
+@-moz-keyframes baja {
+  0% {
+    margin: -19.12vw -3vw;
+  }
+  100% {
+    margin: -18.7vw -3vw;
+  }
+}
+
+@-webkit-keyframes baja {
+  0% {
+    margin: -19.12vw -3vw;
+  }
+  100% {
+    margin: -18.7vw -3vw;
+  }
+}
