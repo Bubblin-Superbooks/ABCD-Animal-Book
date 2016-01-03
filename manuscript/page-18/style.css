@@ -146,7 +146,7 @@ body {
   height: 10.5vw;
   border-radius: 100%;
   background: #808080;
-  margin: 8.85vw -1.05vw
+  margin: 8.85vw -1.25vw
 }
 
 .boca::before {
@@ -236,27 +236,27 @@ body {
 
 @keyframes baja {
   0% {
-    margin: 11.8vw 1.05vw;
+    margin: 11.8vw 0.4vw;
   }
   100% {
-    margin: 15vw 1.05vw;
+    margin: 15vw 0.4vw;
   }
 }
 
 @-moz-keyframes baja {
   0% {
-    margin: 11.8vw 1.05vw;
+    margin: 11.8vw 0.4vw;
   }
   100% {
-    margin: 15vw 1.05vw;
+    margin: 15vw 0.4vw;
   }
 }
 
 @-webkit-keyframes baja {
   0% {
-    margin: 11.8vw 1.05vw;
+    margin: 11.8vw 0.4vw;
   }
   100% {
-    margin: 15vw 1.05vw;
+    margin: 15vw 0.4vw;
   }
 }

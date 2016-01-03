@@ -1,0 +1,11 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #eaed5c;
+  background: -webkit-radial-gradient(left 60%, #caed5c, #f9c534);
+  background: radial-gradient(at left 60%, #caedfc, #f9c534);
+}
+
+.stroke {
+  text-shadow: 3px 3px 0 #090, -1px -1px 0 #aa0, 1px -1px 0 #aa0, -1px 1px 0 #aa0, 1px 1px 0 #aa0;
+}
