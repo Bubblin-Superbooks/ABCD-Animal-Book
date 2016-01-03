@@ -1,1 +1,11 @@
-body{background:rgba(200, 235, 255, 0.99); margin:0 0; overflow:hidden;}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #4abde0;
+  background: -webkit-radial-gradient(right 60%, #7aedf0, #4abde0);
+  background: radial-gradient(at right 60%, #7aedf0, #4abde0);
+}
+
+.stroke {
+  text-shadow: 3px 3px 0 #fa0, -1px -1px 0 #d00, 1px -1px 0 #d00, -1px 1px 0 yellow, 1px 1px 0 orange;
+}
