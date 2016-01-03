@@ -1,1 +1,341 @@
-body{background:rgba(200, 235, 255, 0.99); margin:0 0; overflow:hidden;}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #42b1dd;
+  background: -webkit-radial-gradient(right 10%, #42b1dd, #ffb963);
+  background: radial-gradient(at right 60%, #42b1dd, #ffb963);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+.contenedor {
+  position: relative;
+  width: 80vw;
+  height: 80vw;
+  margin: 90px auto;
+}
+
+.urial {
+  position: absolute;
+  margin: -7vw 3vw
+}
+
+.head {
+  position: absolute;
+  margin: 3vw 6.3vw;
+  animation: baja3 3s alternate infinite;
+  -moz-animation: baja3 3s alternate infinite;
+  -webkit-animation: baja3 3s alternate infinite;
+}
+
+.cabeza {
+  position: absolute;
+  width: 14.3vw;
+  height: 19.5vw;
+  -webkit-border-radius: 63vw 63vw 63vw 63vw / 108vw 108vw 72vw 72vw;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: #9c7966;
+  margin: 16vw 25.5vw
+}
+
+.ojos {
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 300vw 3000vw 300vw 3000vw;
+  background: white;
+  margin: 8.5vw 1.7vw
+}
+
+.ojos::before {
+  content: "";
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 3000vw 300vw 3000vw 300vw;
+  background: white;
+  margin: 0vw 8vw
+}
+
+.iris {
+  position: absolute;
+  width: 2.1vw;
+  height: 2.1vw;
+  border-radius: 100vw;
+  background: black;
+  margin: .7vw .7vw
+}
+
+.iris::before {
+  content: "";
+  position: absolute;
+  width: 2.1vw;
+  height: 2.1vw;
+  border-radius: 100vw;
+  background: black;
+  margin: -0.1vw 7.5vw
+}
+
+.iris3 {
+  position: absolute;
+  width: 1.2vw;
+  height: 1.2vw;
+  border-radius: 100vw;
+  background: white;
+  margin: 0vw .50vw
+}
+
+.iris3::before {
+  content: "";
+  position: absolute;
+  width: 1.2vw;
+  height: 1.2vw;
+  border-radius: 100vw;
+  background: white;
+  margin: -.1vw 7.5vw
+}
+
+.cabeza3 {
+  position: absolute;
+  width: 6.5vw;
+  height: 7vw;
+  border-radius: 100%;
+  background: #ccc;
+  margin: 12.5vw 4vw;
+  border-bottom: .7vw solid black;
+}
+
+.boca {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
+  border-top: 2vw solid black;
+  -moz-border-radius: 100vw / 50vw;
+  -webkit-border-radius: 100vw / 50vw;
+  border-radius: 100vw / 50vw;
+  margin: 14.9vw 5.21vw;
+  animation: baja 3s alternate infinite;
+  -moz-animation: baja 3s alternate infinite;
+  -webkit-animation: baja 3s alternate infinite;
+}
+
+.boca::before {
+  content: "";
+  position: absolute;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 100vw;
+  border-right: .5vw solid black;
+  border-bottom: .5vw solid black;
+  margin: -1.5vw -2.8vw
+}
+
+.boca::after {
+  content: "";
+  position: absolute;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 100vw;
+  border-left: .5vw solid black;
+  border-bottom: .5vw solid black;
+  margin: -1.5vw 0vw
+}
+
+.orejas {
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 300vw 3000vw 300vw 3000vw;
+  background: #9c7966;
+  border-left: .7vw solid #645445;
+  margin: 17vw 21.3vw;
+  transform: rotate(-21deg);
+  -moz-transform: rotate(-21deg);
+  -webkit-transform: rotate(-21deg);
+}
+
+.orejas::before {
+  content: "";
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 3000vw 300vw 3000vw 300vw;
+  background: #9c7966;
+  border-right: .7vw solid #645445;
+  margin: 6.3vw 14.9vw;
+  transform: rotate(42deg);
+  -moz-transform: rotate(42deg);
+  -webkit-transform: rotate(42deg);
+}
+
+.cuernos {
+  position: absolute;
+  width: 18vw;
+  height: 16vw;
+  border-radius: 100%;
+  border-top: 5vw ridge #645343;
+  ;
+  margin: 11.5vw 14vw;
+}
+
+.cuernos::before {
+  content: "";
+  position: absolute;
+  width: 18vw;
+  height: 16vw;
+  border-radius: 100%;
+  border-top: 5vw ridge #645343;
+  margin: -4.8vw 19.9vw
+}
+
+.body {
+  position: absolute;
+  width: 25vw;
+  height: 30vw;
+  -webkit-border-radius: 63vw 63vw 63vw 63vw / 108vw 108vw 72vw 72vw;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: #7a5f4e;
+  margin: 35vw 26vw
+}
+
+.body::before {
+  content: "";
+  position: absolute;
+  width: 14.9vw;
+  height: 23vw;
+  -webkit-border-radius: 63vw 63vw 63vw 63vw / 108vw 108vw 72vw 72vw;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: #ccc;
+  margin: 0vw 5vw
+}
+
+.legs {
+  position: absolute;
+  width: 4.5vw;
+  height: 25vw;
+  border-radius: 40vw;
+  background: #7a5f4e;
+  margin: 57vw 27vw;
+  border-bottom: 3vw solid black;
+  transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+}
+
+.legs::before {
+  content: "";
+  position: absolute;
+  width: 4.5vw;
+  height: 25vw;
+  border-radius: 40vw;
+  background: #7a5f4e;
+  margin: -3vw 16.5vw;
+  border-bottom: 3vw solid black;
+  transform: rotate(-21deg);
+  -moz-transform: rotate(-21deg);
+  -webkit-transform: rotate(-21deg);
+}
+
+.legs3 {
+  position: absolute;
+  width: 4.5vw;
+  height: 14vw;
+  border-radius: 40vw;
+  background: #645343;
+  margin: 55vw 27vw;
+  border-bottom: 3vw solid black;
+  transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+}
+
+.legs3::before {
+  content: "";
+  position: absolute;
+  width: 4.5vw;
+  height: 14vw;
+  border-radius: 40vw;
+  background: #645343;
+  margin: -3.5vw 16.9vw;
+  border-bottom: 3vw solid black;
+  transform: rotate(-21deg);
+  -moz-transform: rotate(-21deg);
+  -webkit-transform: rotate(-21deg);
+}
+
+.cola {
+  position: absolute;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 100vw;
+  border-top: 3.5vw ridge #645343;
+  margin: 47vw 45vw
+}
+
+@keyframes baja {
+  0% {
+    margin: 14.3vw 5.21vw;
+  }
+  100% {
+    margin: 14.9vw 5.21vw;
+  }
+}
+
+@-moz-keyframes baja {
+  0% {
+    margin: 14.3vw 5.21vw;
+  }
+  100% {
+    margin: 14.9vw 5.21vw;
+  }
+}
+
+@-webkit-keyframes baja {
+  0% {
+    margin: 14.3vw 5.21vw;
+  }
+  100% {
+    margin: 14.9vw 5.21vw;
+  }
+}
+
+@keyframes baja3 {
+  0 {
+    margin: 3vw 6.3vw;
+  }
+  100% {
+    margin: 9vw 6.3vw;
+  }
+}
+
+@-moz-keyframes baja3 {
+  0 {
+    margin: 3vw 6.3vw;
+  }
+  100% {
+    margin: 9vw 6.3vw;
+  }
+}
+
+@-webkit-keyframes baja3 {
+  0 {
+    margin: 3vw 6.3vw;
+  }
+  100% {
+    margin: 9vw 6.3vw;
+  }
+}
