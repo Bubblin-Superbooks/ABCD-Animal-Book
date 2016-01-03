@@ -1,8 +1,10 @@
 body {
   height: 100vh;
   width: 100vw;
-  background: -webkit-radial-gradient(right 60%, #efe7d2, #66aaf3);
-  background: radial-gradient(at right 60%, #efe7d2, #66aaf3);
+  background:#efe7d2; 
+  background: -webkit-radial-gradient(right 60%, #efe7d2, #66aaf3); 
+  background: -webkit-radial-gradient(at right 60%, #efe7d2, #66aaf3); 
+  background: radial-gradient(at right 60%, #efe7d2, #66aaf3);   
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21,359 +23,360 @@ body {
 
 .contenedor {
   position: relative;
-  width: 90vw;
-  height: 70vh;
-  border-radius: 100%;
-  margin: 212px auto;
+  width: 80vw;
+  height: 80vw;
+  margin: 10vw auto;
+}
+
+.canguro {
+  position: absolute;
+  margin: 9vw 5vw;
 }
 
 .cabeza {
   position: absolute;
-  display: block;
-  width: 14vw;
-  height: 14vh;
-  -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+  width: 11.5vw;
+  height: 14.5vw;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   background: #cc9666;
-  margin: 17% 43%;
+  margin: 12vw 29vw
 }
 
 .orejas {
   position: absolute;
-  width: 4vw;
-  height: 12vh;
+  width: 4.5vw;
+  height: 12vw;
   border-radius: 100%;
   background: #cc9666;
-  margin: 7% 39%;
+  margin: 6vw 25.5vw;
   transform: rotate(-30deg);
   -moz-transform: rotate(-30deg);
   -webkit-transform: rotate(-30deg);
-  border: 6px solid #f7bb7b;
+  border: .6vw solid #f7bb7b;
 }
 
 .orejas::before {
   content: "";
   position: absolute;
-  width: 4vw;
-  height: 12vh;
+  width: 4.5vw;
+  height: 12vw;
   border-radius: 100%;
   background: #cc9666;
-  margin: 165% 297%;
+  margin: 5.5vw 10.5vw;
   transform: rotate(60deg);
   -moz-transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
-  border: 6px solid #f7bb7b;
+  border: .6vw solid #f7bb7b;
 }
 
 .ojos {
   position: absolute;
-  width: 4vw;
-  height: 4.5vw;
-  border-radius: 100%;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100vw;
   background: white;
-  margin: 55% 12%;
+  margin: 6vw 1.2vw;
   animation: baja 3s alternate infinite;
   -moz-animation: baja 3s alternate infinite;
   -webkit-animation: baja 3s alternate infinite;
 }
 
-.ojos3 {
-  position: absolute;
-  width: 4vw;
-  height: 4.5vw;
-  border-radius: 100%;
+.ojos::before {
+  content: "";
+  display: block;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100vw;
   background: white;
-  margin: 55% 65%;
-  animation: baja7 3s alternate infinite;
-  -moz-animation: baja7 3s alternate infinite;
-  -webkit-animation: baja7 3s alternate infinite;
+  margin: 0vw 6vw;
 }
 
 .iris {
   position: absolute;
-  width: 2vw;
-  height: 1.5vh;
-  border-radius: 100%;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 100vw;
   background: black;
-  margin: 4% 12%;
+  margin: -3vw 0.5vw;
   animation: baja3 3s alternate infinite;
   -moz-animation: baja3 3s alternate infinite;
   -webkit-animation: baja3 3s alternate infinite;
 }
 
-.iris3 {
+.iris::before {
+  content: "";
   position: absolute;
-  width: 2vw;
-  height: 1.5vh;
-  border-radius: 100%;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 100vw;
   background: black;
-  margin: 4% 30%;
-  animation: baja9 3s alternate infinite;
-  -moz-animation: baja9 3s alternate infinite;
-  -webkit-animation: baja9 3s alternate infinite;
+  margin: 0vw 5.5vw;
 }
 
-.hocico {
-  position: absolute;
-  width: 21%;
-  height: 16%;
-  background: black;
-  border-radius: 500% 500% 500% 3000%;
-  transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  margin: 83% 40%
-}
-
-.cuello {
-  position: absolute;
-  margin: 32% 24%;
-  width: 21vw;
-  height: 0;
-  padding-left: 21vw;
-  padding-bottom: 21vw;
-}
-
-.cuello:after {
+.hocico::before {
   content: "";
   display: block;
   width: 0;
   height: 0;
-  margin-left: -1px;
-  border-left: 3vw solid transparent;
-  border-right: 3vw solid transparent;
-  border-bottom: 7vw solid #f7bb7b;
-  ;
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
+  border-bottom: 2.5vw solid black;
+  border-radius: 100vw / 50vw;
+  margin: -2vw -.25vw
+}
+
+.hocico {
+  position: absolute;
+  width: 3.3vw;
+  height: 2vw;
+  border-radius: 0 0 80vw 80vw;
+  background: #121212;
+  margin: 11vw 4vw
+}
+
+.cuello {
+  position: absolute;
+  border-bottom: 5.5vw solid #f7bb7b;
+  border-left: 1.5vw solid transparent;
+  border-right: 1.5vw solid transparent;
+  height: 0;
+  width: 4vw;
+  margin: 25vw 31.2vw
 }
 
 .body {
   position: absolute;
-  width: 21%;
-  height: 25%;
+  width: 16.5vw;
+  height: 21vw;
   border-radius: 100%;
   background: #f7bb7b;
-  margin: 39% 40%
+  margin: 29vw 26.3vw
 }
 
 .body3 {
   position: absolute;
-  width: 18%;
-  height: 14%;
-  border-radius: 0 0 142px 142px;
+  width: 14.9vw;
+  height: 13vw;
+  border-radius: 0 0 142vw 142vw;
   background: #cc9666;
-  margin: 53% 41.5%;
+  margin: 41.2vw 27vw;
   z-index: 333;
 }
 
 .legs {
   position: absolute;
-  width: 14%;
-  height: 14%;
+  top: 0;
+  left: 0;
+  width: 12vw;
+  height: 12vw;
   background: #f7bb7b;
-  border-radius: 100%;
-  margin: 53% 35%;
+  border-radius: 50vw 50vw 0 50vw;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin: 40vw 23.5vw
 }
 
 .legs::before {
   content: "";
   position: absolute;
-  width: 35%;
-  height: 112%;
+  top: 0;
+  left: 0;
+  width: 12vw;
+  height: 12vw;
   background: #f7bb7b;
-  border-radius: 90% 90%;
-  margin: 60% 30%;
-  transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  border-radius: 50vw 50vw 0 50vw;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  margin: -7vw 7vw
 }
 
 .legs3 {
   position: absolute;
-  width: 14%;
-  height: 14%;
+  width: 6.5vw;
+  height: 14vw;
   background: #f7bb7b;
-  border-radius: 100%;
-  margin: 53% 52%;
+  border-radius: 30vw;
+  margin: 47vw 22vw;
   -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .legs3::before {
   content: "";
   position: absolute;
-  width: 35%;
-  height: 112%;
+  width: 6.5vw;
+  height: 14vw;
   background: #f7bb7b;
-  border-radius: 90% 90%;
-  margin: 36% 80%;
-  transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
+  border-radius: 30vw;
+  margin: -13vw 13vw;
   -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .legs5 {
   position: absolute;
-  width: 12%;
-  height: 30%;
+  width: 8vw;
+  height: 18vw;
   border-top: 3.5vw solid #cc9666;
   border-left: 3.5vw solid transparent;
   border-right: 3.5vw solid transparent;
-  -webkit-border-radius: 100px / 100px;
-  border-radius: 100px / 100px;
+  border-radius: 100vw / 100vw;
   -webkit-transform: rotate(-70deg);
-  -moz-transform: rotate(-70deg);
   transform: rotate(-70deg);
-  margin: 34% 48.5%
+  margin: 27.5vw 30.5vw
 }
 
-.legs6 {
+.legs5::before {
+  content: "";
   position: absolute;
-  width: 12%;
-  height: 30%;
-  border-top: 3.5vw solid #cc9666;
+  width: 8vw;
+  height: 18vw;
+  border-bottom: 3.5vw solid #cc9666;
   border-left: 3.5vw solid transparent;
   border-right: 3.5vw solid transparent;
-  -moz-border-radius: 100px / 100px;
-  -webkit-border-radius: 100px / 100px;
-  border-radius: 100px / 100px;
-  -webkit-transform: rotate(70deg);
-  -moz-transform: rotate(70deg);
-  transform: rotate(70deg);
-  margin: 34% 33%;
+  border-radius: 100vw / 100vw;
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+  margin: -10.5vw -5.5vw;
+}
+
+.legs7 {
+  position: absolute;
+  width: 3.7vw;
+  height: 2.5vw;
+  border-radius: 0 0 50vw 50vw;
+  background: #cc9666;
+  margin: 38.7vw 27.4vw
+}
+
+.legs7::before {
+  content: "";
+  position: absolute;
+  width: 3.7vw;
+  height: 2.5vw;
+  border-radius: 0 0 50vw 50vw;
+  background: #cc9666;
+  margin: 0vw 10.2vw
 }
 
 .cola {
   position: absolute;
-  width: 21vw;
-  height: 21vh;
+  width: 12vw;
+  height: 19vw;
   border-radius: 100%;
   border-left: 5vw solid #cc9666;
-  margin: 30% 56%;
+  margin: 27vw 40vw;
   -webkit-transform: rotate(35deg);
-  -moz-transform: rotate(35deg);
   transform: rotate(35deg);
 }
 
 .cabeza3 {
   position: absolute;
   display: block;
-  width: 6.5vw;
-  height: 6vh;
-  -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+  width: 6vw;
+  height: 7.3vw;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   background: #dd9966;
-  margin: 37% 47%;
+  margin: 33vw 14vw;
   border: 1px solid #996633
 }
 
 .orejitas {
   position: absolute;
-  width: 3vw;
-  height: 5vh;
+  width: 2.5vw;
+  height: 6vw;
   border-radius: 100%;
   background: #cc9666;
-  border: 3px solid #ffd7ae;
-  margin: 33% 46%;
+  border: .3vw solid #ffd7ae;
+  margin: 30.5vw 13.5vw;
   -webkit-transform: rotate(-21deg);
-  -moz-transform: rotate(-21deg);
   transform: rotate(-21deg);
 }
 
 .orejitas::before {
   content: "";
   position: absolute;
-  width: 3vw;
-  height: 5vh;
+  width: 2.5vw;
+  height: 6vw;
   border-radius: 100%;
   background: #cc9666;
-  border: 3px solid #ffd7ae;
-  margin: 50% 121%;
+  border: .3vw solid #ffd7ae;
+  margin: 1.5vw 4.3vw;
   -webkit-transform: rotate(42deg);
-  -moz-transform: rotate(42deg);
   transform: rotate(42deg);
 }
 
 .ojitos {
   position: absolute;
   width: 2vw;
-  height: 1.5vh;
-  border-radius: 100%;
-  background: black;
-  margin: 40% 9%;
+  height: 2vw;
+  border-radius: 100vw;
+  background: white;
+  margin: 3vw .5vw;
   animation: abre 2s linear infinite;
   -moz-animation: abre 2s linear infinite;
   -webkit-animation: abre 2s linear infinite;
 }
 
-.ojitos3 {
+.ojitos::before {
+  content: "";
   position: absolute;
   width: 2vw;
-  height: 1.5vh;
-  border-radius: 100%;
-  background: black;
-  margin: 40% 60%;
-  animation: abre 2s linear infinite;
-  -moz-animation: abre 2s linear infinite;
-  -webkit-animation: abre 2s linear infinite;
+  height: 2vw;
+  border-radius: 100vw;
+  background: white;
+  margin: 0vw 3vw;
 }
 
 .irisitos {
   position: absolute;
-  width: 1vw;
-  height: .63vh;
-  border-radius: 100%;
-  background: white;
-  margin: 0% 17%;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 100vw;
+  background: black;
+  margin: 1px .5vw;
 }
 
-.irisitos3 {
+.irisitos::before {
+  content: "";
   position: absolute;
-  width: 1vw;
-  height: .63vh;
-  border-radius: 100%;
-  background: white;
-  margin: 0% 27%;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 100vw;
+  background: black;
+  margin: 0vw 2.5vw;
 }
 
 .hocico3 {
   position: absolute;
-  width: 23%;
-  height: 19%;
-  background: black;
-  border-radius: 500% 500% 500% 3000%;
-  transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  margin: 77% 39%
+  width: 1.9vw;
+  height: .9vw;
+  border-radius: 0 0 80vw 80vw;
+  background: #121212;
+  margin: 5.3vw 2.1vw
+}
+
+.hocico3::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 1.2vw solid transparent;
+  border-right: 1.2vw solid transparent;
+  border-bottom: 1.2vw solid black;
+  border-radius: 100vw / 50vw;
+  margin: -1vw -.2vw
 }
 
 .cangurito {
-  margin: 21% 0%;
+  position: absolute;
+  margin: 21vw 22.1vw;
   animation: sube 3s alternate infinite;
   -moz-animation: sube 3s alternate infinite;
   -webkit-animation: sube 3s alternate infinite;
 }
 
 @keyframes abre {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes abre {
   0% {
     opacity: 1;
   }
@@ -411,270 +414,112 @@ body {
 
 @keyframes sube {
   0% {
-    margin: 21% 0%;
+    margin: 21vw 22.1vw;
   }
   25% {
-    margin: 21% 0%;
+    margin: 21vw 22.1vw;
   }
   50% {
-    margin: 8% 0%;
+    margin: 10vw 22.1vw;
   }
   75% {
-    margin: 8% 0%;
+    margin: 10vw 22.1vw;
   }
   100% {
-    margin: 8% 0%;
-  }
-}
-
-@-moz-keyframes sube {
-  0% {
-    margin: 21% 0%;
-  }
-  25% {
-    margin: 21% 0%;
-  }
-  50% {
-    margin: 8% 0%;
-  }
-  75% {
-    margin: 8% 0%;
-  }
-  100% {
-    margin: 8% 0%;
+    margin: 10vw 22.1vw;
+    ;
   }
 }
 
 @-webkit-keyframes sube {
   0% {
-    margin: 21% 0%;
+    margin: 21vw 22.1vw;
   }
   25% {
-    margin: 21% 0%;
+    margin: 21vw 22.1vw;
   }
   50% {
-    margin: 8% 0%;
+    margin: 10vw 22.1vw;
   }
   75% {
-    margin: 8% 0%;
+    margin: 10vw 22.1vw;
   }
   100% {
-    margin: 8% 0%;
+    margin: 10vw 22.1vw;
+    ;
   }
 }
 
 @keyframes baja {
   0% {
-    margin: 55% 12%;
+    margin: 6vw 1.2vw;
   }
   25% {
-    margin: 55% 12%;
+    margin: 6vw 1.2vw;
+    ;
   }
   50% {
-    margin: 60% 12%;
+    margin: 7vw 1.2vw;
   }
   75% {
-    margin: 60% 12%;
+    margin: 7vw 1.2vw;
   }
   100% {
-    margin: 60% 12%;
-  }
-}
-
-@-moz-keyframes baja {
-  0% {
-    margin: 55% 12%;
-  }
-  25% {
-    margin: 55% 12%;
-  }
-  50% {
-    margin: 60% 12%;
-  }
-  75% {
-    margin: 60% 12%;
-  }
-  100% {
-    margin: 60% 12%;
+    margin: 7vw 1.2vw;
   }
 }
 
 @-webkit-keyframes baja {
   0% {
-    margin: 55% 12%;
+    margin: 6vw 1.2vw;
   }
   25% {
-    margin: 55% 12%;
+    margin: 6vw 1.2vw;
+    ;
   }
   50% {
-    margin: 60% 12%;
+    margin: 7vw 1.2vw;
   }
   75% {
-    margin: 60% 12%;
+    margin: 7vw 1.2vw;
   }
   100% {
-    margin: 60% 12%;
+    margin: 7vw 1.2vw;
   }
 }
 
 @keyframes baja3 {
   0% {
-    margin: 4% 12%;
+    margin: -3vw 0.5vw;
   }
   25% {
-    margin: 4% 12%;
+    margin: -3vw 0.5vw;
   }
   50% {
-    margin: 33% 12%;
+    margin: -2.5vw 0.5vw;
   }
   75% {
-    margin: 33% 12%;
+    margin: -2.5vw 0.5vw;
   }
   100% {
-    margin: 33% 12%;
-  }
-}
-
-@-moz-keyframes baja3 {
-  0% {
-    margin: 4% 12%;
-  }
-  25% {
-    margin: 4% 12%;
-  }
-  50% {
-    margin: 33% 12%;
-  }
-  75% {
-    margin: 33% 12%;
-  }
-  100% {
-    margin: 33% 12%;
+    margin: -2.5vw 0.5vw;
   }
 }
 
 @-webkit-keyframes baja3 {
   0% {
-    margin: 4% 12%;
+    margin: -3vw 0.5vw;
   }
   25% {
-    margin: 4% 12%;
+    margin: -3vw 0.5vw;
   }
   50% {
-    margin: 33% 12%;
+    margin: -2.5vw 0.5vw;
   }
   75% {
-    margin: 33% 12%;
+    margin: -2.5vw 0.5vw;
   }
   100% {
-    margin: 33% 12%;
-  }
-}
-
-@keyframes baja7 {
-  0% {
-    margin: 55% 65%;
-  }
-  25% {
-    margin: 55% 65%;
-  }
-  50% {
-    margin: 60% 65%;
-  }
-  75% {
-    margin: 60% 65%;
-  }
-  100% {
-    margin: 60% 65%;
-  }
-}
-
-@-moz-keyframes baja7 {
-  0% {
-    margin: 55% 65%;
-  }
-  25% {
-    margin: 55% 65%;
-  }
-  50% {
-    margin: 60% 65%;
-  }
-  75% {
-    margin: 60% 65%;
-  }
-  100% {
-    margin: 60% 65%;
-  }
-}
-
-@-webkit-keyframes baja7 {
-  0% {
-    margin: 55% 65%;
-  }
-  25% {
-    margin: 55% 65%;
-  }
-  50% {
-    margin: 60% 65%;
-  }
-  75% {
-    margin: 60% 65%;
-  }
-  100% {
-    margin: 60% 65%;
-  }
-}
-
-@keyframes baja9 {
-  0% {
-    margin: 4% 30%;
-  }
-  25% {
-    margin: 4% 30%;
-  }
-  50% {
-    margin: 33% 30%;
-  }
-  75% {
-    margin: 33% 30%;
-  }
-  100% {
-    margin: 33% 30%;
-  }
-}
-
-@-moz-keyframes baja9 {
-  0% {
-    margin: 4% 30%;
-  }
-  25% {
-    margin: 4% 30%;
-  }
-  50% {
-    margin: 33% 30%;
-  }
-  75% {
-    margin: 33% 30%;
-  }
-  100% {
-    margin: 33% 30%;
-  }
-}
-
-@-webkit-keyframes baja9 {
-  0% {
-    margin: 4% 30%;
-  }
-  25% {
-    margin: 4% 30%;
-  }
-  50% {
-    margin: 33% 30%;
-  }
-  75% {
-    margin: 33% 30%;
-  }
-  100% {
-    margin: 33% 30%;
+    margin: -2.5vw 0.5vw;
   }
 }
