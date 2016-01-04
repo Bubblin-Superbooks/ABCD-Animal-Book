@@ -21,10 +21,8 @@ body {
 }
 
 .contenedor {
-  position: absolute;
-  width: 70vw;
-  height: 700vw;
-  margin: 90px auto;
+  width: 100vw;
+  height: 60vw;
 }
 
 .arbol {
@@ -32,7 +30,7 @@ body {
   width: 50vw;
   height: 4vw;
   background: #8e643a;
-  margin: 10vw 30vw;
+  margin: -12vw 30vw;
   transform: rotate(-3deg);
   -moz-transform: rotate(-3deg);
   -webkit-transform: rotate(-3deg);
@@ -42,7 +40,7 @@ body {
   content: "";
   display: block;
   width: 17vw;
-  height: 90vw;
+  height: 80vw;
   background: #8e643a;
   transform: rotate(3deg);
   -moz-transform: rotate(3deg);
@@ -52,7 +50,7 @@ body {
 
 .mono {
   position: absolute;
-  margin: 12vw 40vw;
+  margin: -9.5vw 40vw;
 }
 
 .head {
