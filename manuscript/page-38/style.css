@@ -1,4 +1,6 @@
 body {
+  height:100vh;
+  width:100vw;
   background: #92b2ff;
   background: -webkit-radial-gradient(right 60%, #02b2ff, #66ad83);
   background: radial-gradient(at right 60%, #02b2ff, #66ad83);
@@ -17,15 +19,18 @@ body {
   -ms-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  font-size: 6vw;
   overflow: hidden;
 }
 
 .contenedor {
   position: relative;
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
-  margin: 16vw auto;
+}
+
+.conejo {
+  position: absolute;
+  margin: 19vw 7vw
 }
 
 .cabeza {
