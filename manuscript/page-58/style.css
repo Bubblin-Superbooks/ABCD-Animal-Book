@@ -1,1 +1,125 @@
-body{background:rgba(200, 235, 255, 0.99); margin:0 0; overflow:hidden;}
+body {
+  background-color: #ff4814;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+}
+
+.heart {
+  position: absolute;
+  width: 25vw;
+  height: 22.5vw;
+  top: 50vw;
+  left: 50%;
+  margin-top: -15vw;
+  margin-left: -12.5vw;
+}
+
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 12.5vw;
+  top: 0;
+  width: 12.5vw;
+  height: 20vw;
+  background: #fff;
+  border-radius: 10vw 10vw 0 0;
+  -webkit-transform: rotate(-46deg);
+          transform: rotate(-46deg);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+
+.heart1 {
+  -webkit-animation: heart-anim 1s linear .4s infinite;
+          animation: heart-anim 1s linear .4s infinite;
+}
+
+.heart2 {
+  -webkit-animation: pounding .5s linear infinite alternate;
+          animation: pounding .5s linear infinite alternate;
+}
+
+.heart1:after,
+.heart1:before {
+  background-color: #f44;
+}
+
+@-webkit-keyframes pounding {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pounding {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes heart-anim {
+  46% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  52% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  55% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(50);
+            transform: scale(50);
+  }
+}
+
+@keyframes heart-anim {
+  46% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  52% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  55% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(50);
+            transform: scale(50);
+  }
+}
