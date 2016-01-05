@@ -1,6 +1,10 @@
 # A-B-C-D-Animals-Book
 
-A cute and cuddly [Superbook](https://bubbl.in/about) for newborns. English alphabets alongside simple animated animals to make them stare that bit longer.
+A cute and cuddly [Superbook](https://bubbl.in/about) for newborns. Brought to you by web enthusiasts. 
+
+The first of its kind, this uses only css to present alphabets and adorable animals alongside to help babies stare only that bit longer. No flashy gimmicks, no stupid gamification. Just book, and a free one at that. Even better, it works everywhere - iPads, iPhones, Android Phones, Desktops, TVs! Wherever.
+
+Go ahead, help your little ones learn their ABCs!
 
 # Superbook
 The book is live here: [A-B-C-D Animals Book](https://bubbl.in/cover/a-b-c-d-animals-book-by-marvin-danig)
