@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> {{{ BOOKNAME }}} | Superbook</title>
+  <link rel="shortcut icon" href="/crust/images/favicon.png">
+  <link rel="stylesheet" href="/crust/css/superbook.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.0.4/js.cookie.min.js"></script>
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+</head>
+<body class="book">
+  <main id="viewer">
+    <div id="superbook">
+      <a class="ui-arrow-control ui-arrow-next-page flex" ignore="1">
+        <i class="fa fa-angle-right"></i>
+      </a>
+      <a class="ui-arrow-control ui-arrow-previous-page flex" ignore="1">
+        <i class="fa fa-angle-left"></i>
+      </a>
+     {{{ CONTENT }}}
+    </div>
+  </main>
+  <input type="hidden" id="bookname" value={{{ BOOKNAME }}} />
+  <script src="/crust/scripts/crust.js"></script>
+
+</body>
+</html>
+
+

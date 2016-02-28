@@ -1,0 +1,32 @@
+{
+  "name": "ABCD-Animal-Book",
+  "version": "0.0.1",
+  "description": "Superbook ABCD-Animal-Book by judag, marvin & fabio",
+  "keywords": [
+    "superbook",
+    "bookiza"
+  ],
+  "author": "marvin <marvin@bubbl.in> (https://bubbl.in/marvin)",
+  "license": "ISC",
+  "homepage": "https://bubbl.in/marvin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github/project/url/here"
+  },
+  "dependencies": {
+    "browser-sync": "2.10.1",
+    "gulp": "3.9.0",
+    "gulp-compile-handlebars": "0.6.1",
+    "gulp-concat": "2.6.0",
+    "gulp-haml": "0.1.6",
+    "gulp-if": "2.0.0",
+    "gulp-less": "3.0.5",
+    "gulp-markdown": "1.2.0",
+    "gulp-postcss": "6.1.0",
+    "gulp-sass": "2.2.0",
+    "gulp-stylus": "2.3.0",
+    "js-cookie": "2.1.0",
+    "path": "0.12.7",
+    "shelljs": "0.6.0"
+  }
+}
