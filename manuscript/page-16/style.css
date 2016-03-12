@@ -1,1 +1,696 @@
-body{background:rgba(200, 235, 255, 0.99); margin:0 0; overflow:hidden;}
+  body {
+    height: 100vh;
+    width: 100vw;
+    background: -webkit-radial-gradient(#ddaa77 50%, #66ad83 100%);
+    background: radial-gradient(#ddaa77 50%, #66ad83 100%);
+    background: -webkit-radial-gradient(right 60%, #ddaa77, #66ad83);
+    background: radial-gradient(at right 60%, #ddaa77, #66ad83);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .jirafa {
+    width: 80vw;
+    height: 85vh;
+    position: relative;
+    z-index: 1;
+    padding-top: 21%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .head {
+    position: relative;
+    width: 14vw;
+    height: 14vw;
+    border-radius: 100%;
+    background: #ffcc33;
+    margin: -16px auto;
+    z-index: 500;
+    animation: eat 3s alternate infinite;
+    -moz-animation: eat 3s alternate infinite;
+    -webkit-animation: eat 3s alternate infinite;
+  }
+  
+  .tongue {
+    position: absolute;
+    width: 2vw;
+    height: 3vh;
+    background: #ff6666;
+    transform: rotate(-121deg);
+    -moz-transform: rotate(-121deg);
+    -webkit-transform: rotate(-121deg);
+    border-radius: 300% 300% 0 0;
+    margin: 85% -65%;
+    animation: eat3 3s alternate infinite;
+    -moz-animation: eat3 3s alternate infinite;
+    -webkit-animation: eat3 3s alternate infinite;
+  }
+  
+  .hocico {
+    position: absolute;
+    margin: 21% -50%;
+    width: 67%;
+    height: 0;
+    padding-left: 67%;
+    padding-bottom: 67%;
+    transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -webkit-transform: rotate(-12deg);
+    overflow: hidden;
+  }
+  
+  .hocico:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -9000px;
+    border-left: 9000px solid transparent;
+    border-right: 4000px solid transparent;
+    border-bottom: 5000px solid #ffcc33;
+  }
+  
+  .boca {
+    position: absolute;
+    width: 35%;
+    height: 25%;
+    border-radius: 700% 700% 0 0;
+    background: #663300;
+    transform: rotate(-121deg);
+    -moz-transform: rotate(-121deg);
+    -webkit-transform: rotate(-121deg);
+    margin: 75% -58%
+  }
+  
+  .oreja {
+    position: absolute;
+    width: 18%;
+    height: 50%;
+    border-radius: 100%;
+    background: #ffff99;
+    border-top: 3px solid #663300;
+    border-bottom: 3px solid #663300;
+    border-left: 9px solid #663300;
+    border-right: 3px solid #663300;
+    transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    margin: 3% 80%
+  }
+  
+  .cuer {
+    position: absolute;
+    width: 14%;
+    height: 33%;
+    background: #ffcc33;
+    margin: -25% 55%;
+    transform: rotate(21deg);
+    -moz-transform: rotate(21deg);
+    -webkit-transform: rotate(21deg);
+  }
+  
+  .cuer::before {
+    content: "";
+    display: block;
+    width: 152%;
+    height: 50%;
+    border-radius: 300%;
+    background: #ffcc33;
+    margin: -90% -30%
+  }
+  
+  .cuer3 {
+    position: absolute;
+    width: 14%;
+    height: 33%;
+    background: #ffcc33;
+    margin: -25% 25%;
+    transform: rotate(-21deg);
+    -moz-transform: rotate(-21deg);
+    -webkit-transform: rotate(-21deg);
+  }
+  
+  .cuer3::before {
+    content: "";
+    display: block;
+    width: 152%;
+    height: 50%;
+    border-radius: 300%;
+    background: #ffcc33;
+    margin: -90% -30%
+  }
+  
+  .ojo {
+    position: absolute;
+    width: 21%;
+    height: 21%;
+    border-radius: 100%;
+    background: black;
+    margin: 35% 25%;
+  }
+  
+  .ojo::before {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 40%;
+    border-radius: 100%;
+    background: white;
+    margin: 12% 9%;
+  }
+  
+  .body {
+    position: relative;
+    width: 30vw;
+    height: 50vh;
+    margin: 0 auto;
+    background: white;
+  }
+  
+  .cuellito {
+    position: absolute;
+    margin: -12% 12%;
+    width: 21vw;
+    height: 0;
+    padding-left: 21vw;
+    padding-bottom: 21vw;
+    transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+  }
+  
+  .cuellito:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: 0px;
+    border-left: 10vw solid transparent;
+    border-right: 10wh solid transparent;
+    border-bottom: 55vw solid #ffcc33;
+  }
+  
+  .cuello {
+    position: absolute;
+    width: 35vw;
+    height: 14vh;
+    border-radius: 121% 500% 600% 700%;
+    background: #ffcc33;
+    margin: 132% -6%;
+    transform: rotate(17deg);
+    -moz-transform: rotate(17deg);
+    -webkit-transform: rotate(17deg);
+  }
+  
+  .legs {
+    position: absolute;
+    width: 5vw;
+    height: 35vh;
+    background: #ffcc33;
+    margin: 135% -9%;
+    border-bottom: 21px solid #663300;
+    transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+  }
+  
+  .legs::before {
+    content: "";
+    position: absolute;
+    width: 5vw;
+    height: 27vh;
+    background: #ffcc33;
+    margin: 182% 255%;
+    border-bottom: 21px solid #663300;
+    transform: rotate(-21deg);
+    -moz-transform: rotate(-21deg);
+    -webkit-transform: rotate(-21deg);
+  }
+  
+  .legs3 {
+    position: absolute;
+    width: 5vw;
+    height: 30vh;
+    background: #ffcc33;
+    margin: 156% 75%;
+    border-bottom: 21px solid #663300;
+    transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
+    -webkit-transform: rotate-(12deg);
+  }
+  
+  .legs3::before {
+    content: "";
+    position: absolute;
+    width: 5vw;
+    height: 25vh;
+    background: #ffcc33;
+    margin: 97% -214%;
+    border-bottom: 21px solid #663300;
+    transform: rotate(21deg);
+    -moz-transform: rotate(21deg);
+    -webkit-transform: rotate(21deg);
+  }
+  
+  .cola {
+    position: absolute;
+    width: 2.71vw;
+    height: 12vh;
+    background: #ffcc33;
+    margin: 145% 75%;
+    transform: rotate(-33deg);
+    -moz-transform: rotate(-30deg);
+    -webkit-transform: rotate(-33deg);
+  }
+  
+  .cola::before {
+    content: "";
+    display: block;
+    width: 4.5vw;
+    height: 3.5vh;
+    border-radius: 0 300%;
+    background: #663300;
+    margin: 500% -21%;
+    transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+  }
+  
+  .c1 {
+    position: absolute;
+    width: 2vw;
+    height: 1.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 50% 16%;
+    z-index: 3000;
+  }
+  
+  .c2 {
+    position: absolute;
+    width: 2.5vw;
+    height: 2vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 65% 17%;
+    z-index: 3000;
+  }
+  
+  .c3 {
+    position: absolute;
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 83% 8%;
+    z-index: 3000;
+  }
+  
+  .c4 {
+    position: absolute;
+    width: 3.5vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 102% 14%;
+    z-index: 3000;
+  }
+  
+  .c5 {
+    position: absolute;
+    width: 5.5vw;
+    height: 4vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 121% 2%;
+    z-index: 3000;
+  }
+  
+  .c6 {
+    position: absolute;
+    width: 6vw;
+    height: 5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 142% 6%;
+  }
+  
+  .c7 {
+    position: absolute;
+    width: 6vw;
+    height: 4.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 135% 33%;
+    z-index: 3000;
+  }
+  
+  .c8 {
+    position: absolute;
+    width: 5.5vw;
+    height: 4.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 160% 30%;
+    z-index: 3000;
+  }
+  
+  .c9 {
+    position: absolute;
+    width: 6vw;
+    height: 5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 145% 55%;
+    z-index: 3000;
+  }
+  
+  .c10 {
+    position: absolute;
+    width: 4vw;
+    height: 3.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 162% 60%;
+    z-index: 3000;
+  }
+  
+  .c11 {
+    position: absolute;
+    width: 3.5vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 142% 37%;
+    z-index: 3000;
+  }
+  
+  .c12 {
+    position: absolute;
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 145% 25%;
+    z-index: 3000;
+  }
+  
+  .c13 {
+    position: absolute;
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 155% 45%;
+    z-index: 3000;
+  }
+  
+  .c14 {
+    position: absolute;
+    width: 2.5vw;
+    height: 2vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 162% -3%;
+    z-index: 3000;
+  }
+  
+  .c16 {
+    position: absolute;
+    width: 2.5vw;
+    height: 2vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 187% -3%;
+    z-index: 3000;
+  }
+  
+  .c17 {
+    position: absolute;
+    width: 2.7vw;
+    height: 2.1vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 212% -14%;
+    z-index: 3000;
+  }
+  
+  .c18 {
+    position: absolute;
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 231% -14%;
+    z-index: 3000;
+  }
+  
+  .c19 {
+    position: absolute;
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 172% 14%;
+    z-index: 3000;
+  }
+  
+  .c21 {
+    position: absolute;
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 192% 21%;
+    z-index: 3000;
+  }
+  
+  .c22 {
+    position: absolute;
+    width: 2.5vw;
+    height: 2vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 212% 21%;
+    z-index: 3000;
+  }
+  
+  .c23 {
+    position: absolute;
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 231% 27%;
+    z-index: 3000;
+  }
+  
+  .c24 {
+    position: absolute;
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 182% 56%;
+    z-index: 3000;
+  }
+  
+  .c25 {
+    position: absolute;
+    width: 2.5vw;
+    height: 2vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 201% 57%;
+    z-index: 3000;
+  }
+  
+  .c26 {
+    position: absolute;
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 221% 50%;
+    z-index: 3000;
+  }
+  
+  .c27 {
+    position: absolute;
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 241% 50%;
+    z-index: 3000;
+  }
+  
+  .c28 {
+    position: absolute;
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 182% 73%;
+    z-index: 3000;
+  }
+  
+  .c29 {
+    position: absolute;
+    width: 2.5vw;
+    height: 2vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 201% 80%;
+    z-index: 3000;
+  }
+  
+  .c30 {
+    position: absolute;
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 221% 80%;
+    z-index: 3000;
+  }
+  
+  .c33 {
+    position: absolute;
+    width: 3vw;
+    height: 2.5vh;
+    border-radius: 900%;
+    background: #663300;
+    margin: 237% 87%;
+    z-index: 3000;
+  }
+  
+  .arbol {
+    position: absolute;
+    width: 3vw;
+    height: 30vh;
+    background: #993300;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: -21% 12%;
+  }
+  
+  .hojas {
+    position: absolute;
+    width: 3vw;
+    height: 3.5vh;
+    border-radius: 0 300px;
+    ;
+    background: green;
+    margin: 50% 53%;
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .hojas::before {
+    content: "";
+    display: block;
+    width: 3vw;
+    height: 3.5vh;
+    border-radius: 0 300px;
+    ;
+    background: green;
+    margin: 5% -35%;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+  .hojas::after {
+    content: "";
+    position: absolute;
+    width: 3vw;
+    height: 3.5vh;
+    border-radius: 0 300px;
+    ;
+    background: #009900;
+    margin: -182% 33%;
+    transform: rotate(-21deg);
+    -moz-transform: rotate(-21deg);
+    -webkit-transform: rotate(-21deg);
+  }
+  
+  @keyframes eat {
+    0% {
+      transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(65deg);
+      -moz-transform: rotate(65deg);
+      -webkit-transform: rotate(65deg);
+    }
+  }
+  
+  @-moz-keyframes eat {
+    0% {
+      transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(65deg);
+      -moz-transform: rotate(65deg);
+      -webkit-transform: rotate(65deg);
+    }
+  }
+  
+  @keyframes eat {
+    0% {
+      transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(65deg);
+      -moz-transform: rotate(65deg);
+      -webkit-transform: rotate(65deg);
+    }
+  }
+  
+  @keyframes eat3 {
+    0% {
+      margin: 70% -35%;
+    }
+    100% {
+      margin: 85% -65%;
+    }
+  }
+  
+  @-moz-keyframes eat3 {
+    0% {
+      margin: 70% -35%;
+    }
+    100% {
+      margin: 85% -65%;
+    }
+  }
+  
+  @-webkit-keyframes eat3 {
+    0% {
+      margin: 70% -35%;
+    }
+    100% {
+      margin: 85% -65%;
+    }
+  }
