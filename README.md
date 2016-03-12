@@ -1,25 +1,15 @@
-# A-B-C-D-Animals-Book
+# ABCD-Animals-Book
 
-A cute and cuddly [Superbook](https://bubbl.in/about) for newborns. Brought to you by the web. 
+A cute and cuddly [superbook](https://bubbl.in/about) for newborns. Brought to you by web. 
 
-The first of its kind, this book uses only css to showcase alphabets and adorable animals together that help babies stare only that bit longer. No flashy gimmicks, no stupid gamification. Just a book. 
+First of its kind, this book uses only css to showcase the English alphabets and adorable animals to help babies stare only that bit longer. No flashy gimmicks, no stupid gamification. Just a book. Straight on the web. 
 
-Works *almost* everywhere - iPads, iPhones, Android Phones, Desktops, TVs! 
-
-Great, help your little ones learn their ABCs where they are!
+`Support`: It's supported everywhere - iPads, iPhones, Android Phones & tablets, Kindle, Desktops, TVs. 
 
 # Superbook
-The book is live over here: [A-B-C-D Animals Book](https://bubbl.in/cover/a-b-c-d-animals-book-by-marvin-danig)
+The book is live: [ABCD Animals Book](https://bubbl.in/cover/a-b-c-d-animals-book-by-marvin-danig)
 
-Best experienced on the iPad. 
-
-## How to install book on iPad:
-
-- Open the [book](https://bubbl.in/book/a-b-c-d-animals-book-by-marvin-danig) on Safari.
-- Tap the Share button at the top of the screen.
-- Tap Add to Home Screen…
-
-That's it! Now you'll find your book on the homescreen (like an app!), go ahead open and start reading in fullscreen.
+It's best experienced on the iPad. Slight frame rate quirks might occur on Android tablets due to the hacky use of CSS3 animations. Just for the fun of it.
 
 # Hack it
 
@@ -32,10 +22,19 @@ $ bookiza server
 
 Opens the book at `localhost:4567`.
 
+
+## How to install the book on your iPad for the baby:
+
+- Open the [book](https://bubbl.in/book/a-b-c-d-animals-book-by-marvin-danig) on Safari.
+- Tap the Share button at the top of the screen.
+- Tap `Add to Home Screen`…
+
+Done! The book will open like an app! Speak loudly as you make the alphabet bounce :-)
+
 ## The Project
 This project was created using [bookiza](https://bookiza.io) -- the "book reification" framework. 
 
-This is what the TREE of the manuscript looks like:
+The TREE of the manuscript looks somewhat like this:
 
 ```
 
@@ -113,4 +112,4 @@ Feel free to contribute, fix or help improve the code of this book.
 [![Creative Commons License](https://i.creativecommons.org/l/by/3.0/us/88x31.png)](http://creativecommons.org/licenses/by/3.0/us/)  
 All content of this superbook is licensed under a [Creative Commons Attribution 3.0 United States License](http://creativecommons.org/licenses/by/3.0/us/).
 
-The underlying code used to format and display the content is licensed under the <a href="http://opensource.org/licenses/mit-license.php">MIT license </a>.
+The underlying HTML & CSS3 code used to format and design the content is licensed under the <a href="http://opensource.org/licenses/mit-license.php">MIT license </a>.
