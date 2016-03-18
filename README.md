@@ -9,7 +9,7 @@ First of its kind, this book uses only css to showcase the English alphabets and
 # Superbook
 The book is live: [ABCD Animals Book](https://bubbl.in/cover/a-b-c-d-animals-book-by-marvin-danig)
 
-It's best experienced on the iPad. Slight frame rate quirks might occur on Android tablets due to the hacky use of CSS3 animations. Just for the fun of it.
+It's best experienced on the iPad & Android tablet. Slight frame rate quirks might occur on Android tablets due to the hacky use of CSS3 animations. Just for the fun of it.
 
 # Hack it
 
