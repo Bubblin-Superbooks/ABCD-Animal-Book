@@ -32,7 +32,7 @@ Opens the book at `localhost:4567`.
 Done! The book will open like an app! Speak loudly as you make the alphabet bounce :-)
 
 ## The Project
-This project was created using [bookiza](https://bookiza.io) -- the "book reification" framework. 
+This project was created using [bookiza](http://bookiza.io) -- the "book reification" framework. 
 
 The TREE of the manuscript looks somewhat like this:
 
