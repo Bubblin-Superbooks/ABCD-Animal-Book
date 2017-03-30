@@ -2,9 +2,11 @@
 
 A cute and cuddly [superbook](https://bubbl.in/about) for newborns. Brought to you by web people.
 
-The first of its kind, this book for ABCs uses only CSS3 to showcase adorable animals alongside the English alphabets. These will help your baby stare at the animal only that bit longer. No flashy gimmicks, no stupid gamification, no pesky downloads or upgrades. Just a simple book. Straight on the web.
+The first of its kind, this book for your baby's ABCs uses only CSS3 to showcase adorable animals alongside the English alphabets. Help your baby stare at the animals only that bit longer. ;) No flashy gimmicks, no stupid gamification, no pesky downloads or interrupting upgrades.
 
-`Supported devixes`: Everywhere - iPads, iPhones, Android Phones & tablets, Kindle, Desktops, TVs. See [details](https://bubbl.in/support) but guess what: Books are vest experienced on tablets!
+Just a simple book. And, straight on the web.
+
+`Supported devices`: Everywhere - iPads, iPhones, Android Phones & tablets, Kindle, Desktops, TVs. See [details](https://bubbl.in/support) but guess what: Books are vest experienced on tablets!
 
 ## THE BOOK
 The book is live: [ABCD FRUIT BOOK](https://bubbl.in/cover/abcd-animal-book-by-judith-neumann)
