@@ -1,4 +1,4 @@
-# ABCD FRUIT BOOK
+# ABCD ANIMALS BOOK
 
 A cute and cuddly [superbook](https://bubbl.in/about) for newborns. Brought to you by web people.
 
@@ -9,7 +9,7 @@ Just a simple book. And, straight on the web.
 `Supported devices`: Everywhere - iPads, iPhones, Android Phones & tablets, Kindle, Desktops, TVs. See [details](https://bubbl.in/support) but guess what: Books are vest experienced on tablets!
 
 ## THE BOOK
-The book is live: [ABCD FRUIT BOOK](https://bubbl.in/cover/abcd-animal-book-by-judith-neumann)
+The book is live: [ABCD ANIMALS BOOK](https://bubbl.in/cover/abcd-animal-book-by-judith-neumann)
 
 Slight framerate (FPS) quirks might occur due to the hacky use of CSS3 animations. Just for the fun of it.
 
