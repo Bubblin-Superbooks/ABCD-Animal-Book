@@ -31,8 +31,8 @@ $ bookiza server
 
 Opens the book at `localhost:4567`.
 
-## The Project
-This project was created using [bookiza](https://bookiza.io) -- the "book baking" tool.
+### The Project
+This app was created using [bookiza](https://bookiza.io) -- the "book baking" tool.
 
 The TREE of the manuscript looks somewhat like this:
 
