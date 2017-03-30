@@ -1,6 +1,10 @@
 {
-  "HTML": "html",
-  "CSS": "css",
-  "JS": "js",
-  "HEAD": "html"
+  "mode": {
+    "HTML": "html",
+    "CSS": "css",
+    "JS": "js",
+    "HEAD": "html"
+  },
+  "name": "ABCD-Animal-Book",
+  "type": "blank"
 }

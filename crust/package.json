@@ -1,14 +1,14 @@
 {
-  "name": "ABCD-Animal-Book",
+  "name": " <projectName> ",
   "version": "0.0.4",
-  "description": "Superbook ABCD-Animal-Book by marvin",
+  "description": "Superbook <projectName> by <username>",
   "keywords": [
     "superbook",
     "bookiza"
   ],
-  "author": "marvin <marvin@bubbl.in> (https://bubbl.in/marvin)",
+  "author": " <username> <your@email.com> <(https://bubbl.in/<username>)>",
   "license": "ISC",
-  "homepage": "https://bubbl.in/marvin",
+  "homepage": "https://bubbl.in/<username>",
   "repository": {
     "type": "git",
     "url": "git+https://github/project/url/here"
