@@ -6,12 +6,12 @@ The first of its kind, this book for ABCs uses only CSS3 to showcase adorable an
 
 `Supported devixes`: Everywhere - iPads, iPhones, Android Phones & tablets, Kindle, Desktops, TVs. See [details](https://bubbl.in/support) but guess what: Books are vest experienced on tablets!
 
-# THE BOOK
+## THE BOOK
 The book is live: [ABCD FRUIT BOOK](https://bubbl.in/cover/abcd-animal-book-by-judith-neumann)
 
 Slight framerate (FPS) quirks might occur due to the hacky use of CSS3 animations. Just for the fun of it.
 
-# HOW TO INSTALL IT ON THE iPAD FOR THE BABY
+## HOW TO INSTALL IT ON THE iPAD FOR THE BABY
 
 - Open the [book](https://bubbl.in/cover/abcd-animal-book-by-judith-neumann) on Safari.
 - Tap the Share button at the top of the screen.
@@ -20,7 +20,7 @@ Slight framerate (FPS) quirks might occur due to the hacky use of CSS3 animation
 Done! The book will open like an app! Speak loudly as you make the alphabet bounce :-)
 
 
-# HACK IT IN YOUR OWN LANGUAGE
+### HACK IT IN YOUR OWN LANGUAGE
 
 ```
 $ git clone https://github.com/marvindanig/ABCD-Animal-Book.git
