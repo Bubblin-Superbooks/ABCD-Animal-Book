@@ -1,0 +1,20 @@
+#plotter {
+    pointer-events: auto;
+    cursor: default;
+    background-position: 0 0;
+    background-size: 50% 50%;
+    background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+}
+
+#coordinates {
+    position: absolute;
+    right:  0;
+    top: 0;
+    width: 200px;
+    background: rgba( 0, 190, 0, 0.3);
+}
+
+#xaxis, #yaxis{
+    width: 100%;
+    height: 50%;
+}

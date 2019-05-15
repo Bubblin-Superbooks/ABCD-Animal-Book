@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*:after {
+    box-sizing: border-box;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*:before {
+    box-sizing: border-box;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*transition-duration: 200ms;*/
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;    
+    touch-action: none;
+    position: absolute;
+    box-sizing: border-box;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: aliceblue;
+}
+
+.viewer {
+    pointer-events: none;
+    cursor: default;
+    /*    -webkit-perspective: 20000px;
+    perspective: 20000px;
+*/
+    /* Apply perspective with same vanishing point to children */
+    perspective-origin: 50% 50%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;    
+}
+
+#book {
+    pointer-events: auto;
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+    transform-style: preserve-3d;
+    /* Apply faux 3D space for pages */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.wrapper {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform-style: preserve-3d;
+}
+
+.page {
+    visibility: hidden;
+}
+
+/*.outer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+*/
+
+.inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.inner iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0px none;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    overflow: hidden;
+    pointer-events: none;
+    touch-action: none;
+}
+
+@media (orientation: portrait) {
+    body .viewer {
+        width: calc(100vh * 1540/(1000 * 2));
+        height: 100vh;
+        max-height: calc(100vw * 1443/1114);
+        /* Default CSS when JS is turned off */
+    }
+    body .wrapper {
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;    
+        width: 100%;
+    }
+    body .inner iframe {
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;    
+        width: 100%;
+    }
+    /*    body .even > .gradient {
+        background: -webkit-gradient(linear, right top, left top, color-stop(0.97, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.2)));
+        background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.3) 100%);
+        background-image: -moz-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.3) 100%);
+        background-image: -ms-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.3) 100%);
+        background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.3) 100%);
+        background-image: linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.3) 100%);
+    }
+    body .odd > .gradient {
+        background: -webkit-gradient(linear, right top, left top, color-stop(0.97, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.2)));
+        background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.3) 100%);
+        background-image: -moz-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.3) 100%);
+        background-image: -ms-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.3) 100%);
+        background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.3) 100%);
+        background-image: linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.3) 100%);
+    }
+*/
+}
+
+@media (orientation: landscape) {
+    body .viewer {
+        width: calc(100vh * 1540/1000);
+        height: 100vh;
+        max-height: calc(50vw * 1443/1114);
+    }
+    body .wrapper {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;    
+        width: 50%;
+    }
+    body .inner iframe {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;    
+        width: 50%;
+    }
+    /*    body .even > .gradient {
+        background: -webkit-gradient(linear, left top, right top, color-stop(0.97, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.1)));
+        background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.25) 100%);
+        background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.25) 100%);
+        background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.25) 100%);
+        background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.25) 100%);
+        background-image: linear-gradient(left, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.25) 100%);
+    }
+    body .odd > .gradient {
+        background: -webkit-gradient(linear, right top, left top, color-stop(0.97, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.1)));
+        background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.2) 100%);
+        background-image: -moz-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.2) 100%);
+        background-image: -ms-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.2) 100%);
+        background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.2) 100%);
+        background-image: linear-gradient(right, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.2) 100%);
+    }
+*/
+}
+
+.promoted {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Arrow buttons for desktops */
+
+.arrow-controls {
+    -webkit-transition: none;
+    transition: none;
+    width: 30px;
+    height: 100%;
+    opacity: 1;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    background: rgba(100, 100, 100, 0.4);
+    pointer-events: auto;
+    /*z-index: 10;*/
+}
+
+.previous-page {
+    float: left;
+    margin: 0 0 0 -30px;
+    float: left;
+    border-radius: 10px 0 0 10px;
+}
+
+.next-page {
+    float: right;
+    margin: 0 -30px 0 0;
+    border-radius: 0 10px 10px 0;
+}
+
+svg {
+    pointer-events: none;
+}
+
+.arrow-tap {
+    opacity: 1;
+}
+
+.grabbable {
+    cursor: move;
+    /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+/* (Optional) Apply a "closed-hand" cursor during drag operation. */
+
+.grabbable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+/* To be removed eventually */
+
+@import './plotter.css';

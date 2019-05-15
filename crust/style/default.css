@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+*:after {
+    box-sizing: border-box;
+}
+
+*:before {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #cfcfcf;
+}
+
+.page {
+    height: 100vh;
+    overflow: hidden;
+    background: white;
+    margin: 0 auto 5vh;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0,.1), inset 0 -1px 0 rgba(0,0,0,.07);
+}
+
+.arrow-controls {
+    display:none;
+}
+
+.page iframe {
+    border: 0px none;
+    margin: 0;
+}
+
+@media (orientation: portrait) {
+    body .page {
+        width: calc(100vw * 900/1000);
+        height: calc((100vw * 900/1000)*1443/1115);
+    }
+
+    body .page iframe{
+        width: calc(100vw * 900/1000);
+        height: calc((100vw * 900/1000)*1443/1115);
+    }
+
+}
+
+@media (orientation: landscape) {
+    body .page {
+        width: calc(100vh * 1);
+        height: calc(100vh * 1443 / 1115);
+    }
+
+    body .page iframe{
+        width: calc(100vh * 1);
+        height: calc(100vh * 1443 / 1115);
+    }
+
+}

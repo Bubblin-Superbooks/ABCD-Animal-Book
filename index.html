@@ -2,28 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ABCD-Animal-Book | BOOKIZA </title>
+  <meta http-equiv=”Pragma” content=”no-cache”>
+  <meta http-equiv=”Expires” content=”-1″>
+  <meta http-equiv=”CACHE-CONTROL” content=”NO-CACHE”>
+  <title>Beowulf | BOOKIZA.JS </title>
   <link rel="shortcut icon" href="crust/images/favicon.png">
-  <link rel="stylesheet" href="crust/css/crust.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.0.4/js.cookie.min.js"></script>
-  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+
+    <!-- <link id="default" rel="stylesheet" type="text/css" media="screen" href="crust/style/default.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="crust/style/book.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="crust/style/plotter.css" /> -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
 </head>
-<body class="book">
-  <main id="viewer">
-    <div id="superbook">
-      <a class="ui-arrow-control ui-arrow-next-page flex" ignore="1">
-        <i class="fa fa-angle-right"></i>
-      </a>
-      <a class="ui-arrow-control ui-arrow-previous-page flex" ignore="1">
-        <i class="fa fa-angle-left"></i>
-      </a>
-     <div class='page'><iframe src='build/renders/page-1.html'></iframe></div><div class='page'><iframe src='build/renders/page-2.html'></iframe></div><div class='page'><iframe src='build/renders/page-3.html'></iframe></div><div class='page'><iframe src='build/renders/page-4.html'></iframe></div><div class='page'><iframe src='build/renders/page-5.html'></iframe></div><div class='page'><iframe src='build/renders/page-6.html'></iframe></div><div class='page'><iframe src='build/renders/page-7.html'></iframe></div><div class='page'><iframe src='build/renders/page-8.html'></iframe></div><div class='page'><iframe src='build/renders/page-9.html'></iframe></div><div class='page'><iframe src='build/renders/page-10.html'></iframe></div><div class='page'><iframe src='build/renders/page-11.html'></iframe></div><div class='page'><iframe src='build/renders/page-12.html'></iframe></div><div class='page'><iframe src='build/renders/page-13.html'></iframe></div><div class='page'><iframe src='build/renders/page-14.html'></iframe></div><div class='page'><iframe src='build/renders/page-15.html'></iframe></div><div class='page'><iframe src='build/renders/page-16.html'></iframe></div><div class='page'><iframe src='build/renders/page-17.html'></iframe></div><div class='page'><iframe src='build/renders/page-18.html'></iframe></div><div class='page'><iframe src='build/renders/page-19.html'></iframe></div><div class='page'><iframe src='build/renders/page-20.html'></iframe></div><div class='page'><iframe src='build/renders/page-21.html'></iframe></div><div class='page'><iframe src='build/renders/page-22.html'></iframe></div><div class='page'><iframe src='build/renders/page-23.html'></iframe></div><div class='page'><iframe src='build/renders/page-24.html'></iframe></div><div class='page'><iframe src='build/renders/page-25.html'></iframe></div><div class='page'><iframe src='build/renders/page-26.html'></iframe></div><div class='page'><iframe src='build/renders/page-27.html'></iframe></div><div class='page'><iframe src='build/renders/page-28.html'></iframe></div><div class='page'><iframe src='build/renders/page-29.html'></iframe></div><div class='page'><iframe src='build/renders/page-30.html'></iframe></div><div class='page'><iframe src='build/renders/page-31.html'></iframe></div><div class='page'><iframe src='build/renders/page-32.html'></iframe></div><div class='page'><iframe src='build/renders/page-33.html'></iframe></div><div class='page'><iframe src='build/renders/page-34.html'></iframe></div><div class='page'><iframe src='build/renders/page-35.html'></iframe></div><div class='page'><iframe src='build/renders/page-36.html'></iframe></div><div class='page'><iframe src='build/renders/page-37.html'></iframe></div><div class='page'><iframe src='build/renders/page-38.html'></iframe></div><div class='page'><iframe src='build/renders/page-39.html'></iframe></div><div class='page'><iframe src='build/renders/page-40.html'></iframe></div><div class='page'><iframe src='build/renders/page-41.html'></iframe></div><div class='page'><iframe src='build/renders/page-42.html'></iframe></div><div class='page'><iframe src='build/renders/page-43.html'></iframe></div><div class='page'><iframe src='build/renders/page-44.html'></iframe></div><div class='page'><iframe src='build/renders/page-45.html'></iframe></div><div class='page'><iframe src='build/renders/page-46.html'></iframe></div><div class='page'><iframe src='build/renders/page-47.html'></iframe></div><div class='page'><iframe src='build/renders/page-48.html'></iframe></div><div class='page'><iframe src='build/renders/page-49.html'></iframe></div><div class='page'><iframe src='build/renders/page-50.html'></iframe></div><div class='page'><iframe src='build/renders/page-51.html'></iframe></div><div class='page'><iframe src='build/renders/page-52.html'></iframe></div><div class='page'><iframe src='build/renders/page-53.html'></iframe></div><div class='page'><iframe src='build/renders/page-54.html'></iframe></div><div class='page'><iframe src='build/renders/page-55.html'></iframe></div><div class='page'><iframe src='build/renders/page-56.html'></iframe></div><div class='page'><iframe src='build/renders/page-57.html'></iframe></div><div class='page'><iframe src='build/renders/page-58.html'></iframe></div>
+<body>
+    <div class="viewer" id="plotter">
+        <div id="book">
+            <a class="arrow-controls next-page flex" id="next">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                    <path fill="#fff" d="M5 20c-0.128 0-0.256-0.049-0.354-0.146-0.195-0.195-0.195-0.512 0-0.707l8.646-8.646-8.646-8.646c-0.195-0.195-0.195-0.512 0-0.707s0.512-0.195 0.707 0l9 9c0.195 0.195 0.195 0.512 0 0.707l-9 9c-0.098 0.098-0.226 0.146-0.354 0.146z"></path>
+                </svg>
+            </a>
+            <a class="arrow-controls previous-page flex" id="prev">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                    <path fill="#fff" d="M14 20c0.128 0 0.256-0.049 0.354-0.146 0.195-0.195 0.195-0.512 0-0.707l-8.646-8.646 8.646-8.646c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-9 9c-0.195 0.195-0.195 0.512 0 0.707l9 9c0.098 0.098 0.226 0.146 0.354 0.146z"></path>
+                </svg>
+            </a>
+        <!-- --> <!-- Enable this only when fewer than 30 pages in the book. -->
+        </div>
     </div>
-  </main>
-  <input type="hidden" id="bookname" value="ABCD-Animal-Book"/>
-  <script src="crust/scripts/flora.js"></script>
-  <script src="crust/scripts/keymaster.js"></script>
-  <script src="crust/scripts/invoke.js"></script>
+    <input type="hidden" id="bookname" value="Beowulf"/>
+    <script src="crust/scripts/bookiza.js"></script>
+    <script type="text/javascript">
+
+        // Invoker.
+        const lastPage = () => window.localStorage.lastPage || 1
+        
+
+        const options = { duration: 1000, peel: true, zoom: true, startPage: lastPage(), length: 284 }
+
+
+        const superbook = Bookiza.init({ options })
+
+
+
+
+    </script>
+
 </body>
+
 </html>
